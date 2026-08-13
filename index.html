@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Project</title>
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar py-[25px] absolute top-0 left-0 right-0 z-[1000]">
+        <div class="container">
+          <nav class="flex flex-wrap items-center justify-between">
+            <div class="navbar_brand max-w-[85px]">
+              <a href="#"><img src="./images/home/logo.png" alt="logo" /></a>
+            </div>
+            <div class="text-white hidden lg:block showNavlist" id="navlist">
+              <ul
+                class="flex flex-col items-start md:flex-row justify-between items-center"
+              >
+                <li class="mr-12.5">
+                  <a href="#" class="text-[15px] xl:text-[16px] hover:underline"
+                    >Home</a
+                  >
+                </li>
+                <li class="mr-12.5">
+                  <a href="#" class="text-[15px] xl:text-[16px] hover:underline"
+                    >About Us</a
+                  >
+                </li>
+                <li class="mr-12.5">
+                  <a href="#" class="text-[15px] xl:text-[16px] hover:underline"
+                    >Doctors</a
+                  >
+                </li>
+                <li class="mr-12.5">
+                  <a href="#" class="text-[15px] xl:text-[16px] hover:underline"
+                    >Blogs</a
+                  >
+                </li>
+                <li class="mr-0">
+                  <a href="#" class="text-[15px] xl:text-[16px] hover:underline"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="right flex items-center">
+              <div class="max-w-[52px] mr-[10px]">
+                <img src="./images/home/bell.png" alt="bell" />
+              </div>
+              <div class="max-w-[52px] mr-[10px]">
+                <img src="./images/home/human-face.png" alt="user" />
+              </div>
+              <div id="toggler" class="block md:hidden lg:hidden">
+                <i class="fa-solid fa-bars text-white max-w-[52px]"></i>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- banner -->
+    <main>
+      <section
+        class="banner text-white pt-[180px] pb-[50px] min-h-screen relative"
+      >
+        <div class="container">
+          <div class="banner-content mb-[100px]">
+            <h1
+              class="max-w-[596px] text-jakarta text-[80px] font-semibold tracking-[1px] mb-3"
+            >
+              We Care About Your Health
+            </h1>
+            <p class="text-[16px] max-w-[545px] tracking-[1px] mb-8">
+              Lorem ipsum dolor sit amet consectetur. Ultrices volutpat amet
+              tortor vel eget quam. Interdum nunc vel malesuada pellentesque.
+              Dapibus in eu aenean in tincidunt. At feugiat id vivamus augue.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center h-[58px] min-w-[207px] pl-[20px] pr-[20px] rounded-full bg-white text-[16px] font-medium text-[#1E1E1E]"
+            >
+              <span class="mr-[18px]">Explore Services</span>
+
+              <span
+                class="flex h-[45px] w-[45px] shrink-0 items-center justify-center rounded-full bg-[#1E81AB] text-white"
+              >
+                <i class="fa-solid fa-arrow-right text-[19px]"></i>
+              </span>
+            </a>
+          </div>
+          <!-- bottom part -->
+          <div class="flex flex-col lg:flex-row items-end justify-between">
+            <!-- Patients supported -->
+            <div
+              class="max-w-[335px] min-h-[180px] rounded-[35px] border border-white/40 bg-white/15 px-[28px] py-[25px] backdrop-blur-sm"
+            >
+              <div class="flex items-start mb-5">
+                <h3 class="text-[40px] font-semibold leading-none">3.5k+</h3>
+
+                <p class="ml-[18px] text-[16px] leading-[1.5]">
+                  lives supported<br />
+                  across India
+                </p>
+              </div>
+
+              <!-- Patient images -->
+              <div class="flex items-center">
+                <div class="h-[48px] w-[48px]">
+                  <img
+                    src="./images/home/user-1.png"
+                    alt="patient"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div class="ml-[-10px] h-[48px] w-[48px]">
+                  <img
+                    src="./images/home/user-2.png"
+                    alt="patient"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div class="ml-[-10px] h-[48px] w-[48px]">
+                  <img
+                    src="./images/home/user-3.png"
+                    alt="patient"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div class="ml-[-10px] h-[48px] w-[48px]">
+                  <img
+                    src="./images/home/user-4.png"
+                    alt="patient"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div class="ml-[-10px] h-[48px] w-[48px]">
+                  <img
+                    src="./images/home/user-5.png"
+                    alt="patient"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <!-- Plus -->
+                <div class="ml-[-10px] h-[48px] w-[48px]">
+                  <img
+                    src="./images/home/plus.png"
+                    alt="plus"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Find a doctor -->
+            <div
+              class="max-w-[1100px] min-h-[180px] rounded-[35px] border border-white/40 bg-white/20 px-[30px] py-[28px] backdrop-blur-sm"
+            >
+              <h2 class="mb-[18px] text-[25px] font-semibold">Find a doctor</h2>
+
+              <div class="flex items-center">
+                <!-- Doctor / location -->
+                <div
+                  class="flex h-[68px] w-[395px] items-center rounded-[20px] bg-white px-[22px]"
+                >
+                  <input
+                    type="text"
+                    placeholder="Name of Doctor or Location..."
+                    class="w-full bg-transparent text-[18px] text-[#555] outline-none placeholder:text-[#999]"
+                  />
+                </div>
+
+                <!-- Specialty -->
+                <div
+                  class="ml-[25px] flex h-[68px] w-[300px] items-center justify-between rounded-[20px] bg-white px-[25px]"
+                >
+                  <span class="text-[18px] text-[#999]"> Specialty </span>
+
+                  <i
+                    class="fa-solid fa-chevron-down text-[18px] text-[#888]"
+                  ></i>
+                </div>
+
+                <!-- Availability -->
+                <div class="ml-[38px] flex items-center">
+                  <span class="text-[18px]"> Availability </span>
+
+                  <!-- Toggle -->
+                  <div
+                    class="ml-[15px] flex h-[26px] w-[50px] items-center rounded-full bg-[#6D9CB2] p-[3px]"
+                  >
+                    <span
+                      class="h-[20px] w-[20px] rounded-full bg-white"
+                    ></span>
+                  </div>
+                </div>
+
+                <!-- Search button -->
+                <a
+                  href="#"
+                  class="ml-[35px] flex h-[70px] w-[175px] items-center justify-between rounded-full bg-[#1E81AB] pl-[25px] pr-[8px] text-[18px] font-medium text-white"
+                >
+                  <span>Search</span>
+
+                  <span
+                    class="flex h-[54px] w-[54px] items-center justify-center rounded-full bg-white text-[#1E81AB]"
+                  >
+                    <i class="fa-solid fa-arrow-right text-[19px]"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about py-[100px]">
+        <div class="container">
+          <div class="row mb-[80px]">
+            <div class="col col-40">
+              <div class="flex items-center">
+                <div class="star">
+                  <img
+                    src="./images/home/streamline_star-2-solid.png"
+                    alt="star"
+                    class="object-cover"
+                  />
+                </div>
+                <span class="text-base text-darkBlue font-medium tracking-[1px]"
+                  >ABOUT US</span
+                >
+              </div>
+            </div>
+            <div class="col col-60">
+              <h2
+                class="text-black font-semibold text-[32px] max-w-[736px] text-jakarta"
+              >
+                Medi Flow connects doctors and patients effortlessly, providing
+                smarter, safer, and compassionate healthcare from diagnosis to
+                full recovery.
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-40 pt-[50px]">
+              <div class="flex mb-8">
+                <div
+                  class="rounded-full bg-[#E9F2F6] px-5 py-3 mr-[80px] text-[16px] font-medium text-[#171717]"
+                >
+                  Our Impact
+                </div>
+                <div class="arrow flex">
+                  <div class="max-w-[42px] mr-[15px]">
+                    <img src="./images/home/left-arrow.png" alt="arrow" />
+                  </div>
+                  <div class="max-w-[42px]">
+                    <img src="./images/home/right-arrow.png" alt="arrow" />
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="text-[55px] mb-5 font-medium leading-none text-[#1683ae] sm:text-[62px] lg:text-[66px]"
+              >
+                1050+
+              </h3>
+              <p
+                class="text-[16px] leading-[1.55] text-[#999999] max-w-[250px]"
+              >
+                Healthcare Professionals Supporting Countrywide
+              </p>
+            </div>
+            <div class="col col-60">
+              <div class="flex flex-col lg:flex-row">
+                <div class="w-[50%] mr-[30px]">
+                  <div class="card p-[15px] bg-[#E9F2F8] rounded-[30px]">
+                    <div class="top-part flex justify-between mb-[40px]">
+                      <div class="icon">
+                        <img src="./images/home/love.png" alt="icon" />
+                      </div>
+                      <a
+                        href="#"
+                        class="p-[20px] bg-white text-blue text-[16px] rounded-[30px]"
+                        >Connected Care</a
+                      >
+                    </div>
+                    <h4 class="text-[20px] text-blue font-medium mb-[10px]">
+                      Smart Care
+                    </h4>
+                    <div class="text-part p-[20px] bg-white rounded-[20px]">
+                      <p class="max-w-[245px] text-blue text-[16px]">
+                        Smart digital health tracking ensure accurate insights
+                        and better outcomes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[50%]">
+                  <div class="card p-[15px] bg-[#E9F2F8] rounded-[30px]">
+                    <div class="top-part flex justify-between mb-[40px]">
+                      <div class="icon">
+                        <img src="./images/home/tick.png" alt="icon" />
+                      </div>
+                      <a
+                        href="#"
+                        class="p-[20px] bg-white text-blue text-[16px] rounded-[30px]"
+                        >Data Privacy</a
+                      >
+                    </div>
+                    <h4 class="text-[20px] text-blue font-medium mb-[10px]">
+                      Secure Data
+                    </h4>
+                    <div class="text-part p-[20px] bg-white rounded-[20px]">
+                      <p class="max-w-[300px] text-blue text-[16px]">
+                        Protecting patient data trough secure, HIPAA-compliant
+                        digital health systems.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- service -->
+      <section class="service py-[80px]">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="text-center">
+            <!-- Small Title -->
+            <div
+              class="flex items-center justify-center gap-2 text-[16px] font-semibold text-[#155B79] sm:text-[16px]"
+            >
+              <span>✦</span>
+              <span>SERVICES</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h2
+              class="mt-5 mb-10 text-[34px] font-medium leading-tight tracking-wide text-[#155B79] sm:text-[46px] md:text-[50px] lg:text-[54px] text-jakarta"
+            >
+              Expect Care For Every Situation
+            </h2>
+          </div>
+          <div class="gallary flex justify-between gap-[15px] mb-10">
+            <div
+              class="w-[20%] px-[22px] py-[27px] rounded-3xl bg-linear-to-b from-[#C4EEF2] to-[#9FD2E2] to-[#3ECAD6]"
+            >
+              <img src="./images/home/cardio.png" alt="img" />
+              <p class="text-white text-[20px] text-center">Cardiology</p>
+            </div>
+            <div
+              class="w-[20%] px-[22px] py-[27px] rounded-3xl bg-linear-to-b from-[#C4EEF2] to-[#9FD2E2] to-[#3ECAD6]"
+            >
+              <img src="./images/home/pulmo.png" alt="img" />
+              <p class="text-white text-[20px] mx-auto">Pulmonology</p>
+            </div>
+            <div
+              class="w-[20%] px-[22px] py-[27px] rounded-3xl bg-linear-to-b from-[#C4EEF2] to-[#9FD2E2] to-[#3ECAD6]"
+            >
+              <img src="./images/home/gastro.png" alt="img" />
+              <p class="text-white text-[20px] mx-auto">Gastroenterology</p>
+            </div>
+            <div
+              class="w-[20%] px-[22px] py-[27px] rounded-3xl bg-linear-to-b from-[#C4EEF2] to-[#9FD2E2] to-[#3ECAD6]"
+            >
+              <img src="./images/home/urology.png" alt="img" />
+              <p class="text-white text-[20px] mx-auto">Urology</p>
+            </div>
+            <div
+              class="w-[20%] px-[22px] py-[27px] rounded-3xl bg-linear-to-b from-[#C4EEF2] to-[#9FD2E2] to-[#3ECAD6]"
+            >
+              <img src="./images/home/gynecology.png" alt="img" />
+              <p class="text-white text-[20px] mx-auto">Gynecology</p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <a
+              href="#"
+              class="flex items-center gap-4 rounded-full bg-[#218bb5] py-2 pl-6 pr-2 text-[16px] font-medium text-white shadow-md transition hover:bg-[#176f95]"
+            >
+              <span> Explore Specialists </span>
+
+              <!-- Arrow Circle -->
+              <span
+                class="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-white text-[#218bb5]"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- doctor -->
+      <section
+        class="doctor py-18 bg-linear-to-b from-[#FFF6F6] to-[#DFEDF6] relative"
+      >
+        <div class="container">
+          <!-- TOP CONTENT -->
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-[100px]"
+          >
+            <!-- Heading -->
+            <div class="w-full lg:w-[55%]">
+              <div class="flex items-center gap-2 mb-[25px]">
+                <span class="text-[#155B79] text-lg">✦</span>
+
+                <span
+                  class="text-[#155B79] text-base md:text-lg font-medium uppercase tracking-normal"
+                >
+                  Specialists
+                </span>
+              </div>
+
+              <h2
+                class="text-[#155B79] text-[40px] text-jakarta max-w-[512px] sm:text-[48px] md:text-[56px] lg:text-[58px] leading-[1.1] font-semibold"
+              >
+                Meet The Doctors Caring for You
+              </h2>
+            </div>
+
+            <!-- View All Button -->
+            <div class="w-full lg:w-[45%] flex lg:justify-end">
+              <a
+                href="#"
+                class="inline-flex items-center gap-[10px] px-[20px] py-[10px] rounded-full border border-[#155B79] text-[#155B79] text-base font-medium"
+              >
+                <span>View All Doctors</span>
+
+                <div class="arrow max-w-[42px]">
+                  <img src="./images/home/right-arrow.png" alt="arrow" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-33 relative">
+              <div class="img-div min-h-[380px] h-[380px]">
+                <img src="./images/home/doctor1.png" alt="doctor" />
+              </div>
+              <div class="text-div absolute bottom-38 left-9">
+                <h3 class="text-[20px] text-black font-semibold">
+                  Dr. Basant Kumar
+                </h3>
+                <p class="text-[20px] text-[#7C7B7B]">Cardiologist</p>
+              </div>
+            </div>
+            <div class="col col-33 relative">
+              <div class="img-div min-h-[521px] h-[521px]">
+                <img src="./images/home/doctor2.png" alt="doctor" />
+              </div>
+              <div
+                class="text-div flex items-center gap-[20px] justify-between absolute left-8 bottom-30"
+              >
+                <div class="title">
+                  <h3 class="text-[20px] text-black font-semibold">
+                    Dr. Anu Kumari
+                  </h3>
+                  <p class="text-[20px] text-[#7C7B7B]">Gynaecologist</p>
+                </div>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-[10px] px-[10px] py-[5px] rounded-full border bg-blue text-white text-base font-medium"
+                >
+                  <span>View Details</span>
+
+                  <div class="arrow max-w-[42px]">
+                    <img src="./images/home/wh-arrow.png" alt="arrow" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-33 relative">
+              <div class="img-div min-h-[380px] h-[380px]">
+                <img src="./images/home/doctor3.png" alt="doctor" />
+              </div>
+              <div class="text-div absolute bottom-38 left-9">
+                <h3 class="text-[20px] text-black font-semibold">
+                  Dr. Badal Roy
+                </h3>
+                <p class="text-[20px] text-[#7C7B7B]">Gastroentrologist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- approach -->
+      <section class="app py-30">
+        <div class="container">
+          <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+            <!-- ================= LEFT CONTENT ================= -->
+            <div
+              class="w-full lg:w-1/2 bg-[#DFEDF6] rounded-[24px] px-8 py-10 sm:px-10 lg:px-9 xl:px-10"
+            >
+              <!-- Small Heading -->
+              <div class="flex items-center gap-2 mb-7">
+                <span class="text-[#176083] text-lg">✦</span>
+                <span
+                  class="text-[#176083] text-base sm:text-lg font-medium tracking-wide"
+                >
+                  APPROACH
+                </span>
+              </div>
+
+              <!-- Main Heading -->
+              <h2
+                class="text-darkBlue font-jakarta text-4xl sm:text-5xl lg:text-[48px] xl:text-[52px] leading-[1.15] font-medium mb-5"
+              >
+                Committed To Your
+                <br />
+                Health
+              </h2>
+
+              <!-- Paragraph -->
+              <p
+                class="text-[#202020] text-base sm:text-lg leading-[1.35] max-w-[580px] mb-9"
+              >
+                Lorem ipsum dolor sit amet consectetur. Molestie auctor
+                venenatis integer arcu. Rutrum aliquam risus bibendum volutpat
+                at ut neque adipiscing. Sed at cras tempus ut. Ac egestas orci
+                egestas ac luctus tristique.
+              </p>
+
+              <!-- Features -->
+              <div class="flex flex-col gap-5">
+                <!-- Item 1 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-8 h-8 min-w-8 rounded-full bg-[#2694c0] text-white flex items-center justify-center text-sm"
+                  >
+                    ✓
+                  </span>
+
+                  <p
+                    class="text-darkBlue fon text-base sm:text-lg font-semibold"
+                  >
+                    Your gateway to smarter, patient-friendly telehealth
+                  </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-8 h-8 min-w-8 rounded-full bg-[#2694c0] text-white flex items-center justify-center text-sm"
+                  >
+                    ✓
+                  </span>
+
+                  <p class="text-darkBlue font-semibold text-base sm:text-lg">
+                    Safe & protected
+                  </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-8 h-8 min-w-8 rounded-full bg-[#2694c0] text-white flex items-center justify-center text-sm"
+                  >
+                    ✓
+                  </span>
+
+                  <p class="text-darkBlue font-semibold text-base sm:text-lg">
+                    24/7 hours service
+                  </p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-8 h-8 min-w-8 rounded-full bg-[#2694c0] text-white flex items-center justify-center text-sm"
+                  >
+                    ✓
+                  </span>
+
+                  <p class="text-darkBlue font-semibold text-base sm:text-lg">
+                    Advanced health care for every steps
+                  </p>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-8 h-8 min-w-8 rounded-full bg-[#2694c0] text-white flex items-center justify-center text-sm"
+                  >
+                    ✓
+                  </span>
+
+                  <p class="text-darkBlue font-semibold text-base sm:text-lg">
+                    Modern technology for better results
+                  </p>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-8 h-8 min-w-8 rounded-full bg-[#2694c0] text-white flex items-center justify-center text-sm"
+                  >
+                    ✓
+                  </span>
+
+                  <p class="text-darkBlue font-semibold text-base sm:text-lg">
+                    Easy appointment booking
+                  </p>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-8 h-8 min-w-8 rounded-full bg-[#2694c0] text-white flex items-center justify-center text-sm"
+                  >
+                    ✓
+                  </span>
+
+                  <p class="text-darkBlue font-semibold text-base sm:text-lg">
+                    Connect top rated doctors across India
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= RIGHT IMAGE GALLERY ================= -->
+            <div
+              class="w-full lg:w-1/2 flex gap-5 min-h-[500px] lg:min-h-[710px]"
+            >
+              <!-- COLUMN 1 -->
+              <div class="w-1/3 flex flex-col gap-5">
+                <!-- Image 1 -->
+                <div
+                  class="h-[52%] overflow-hidden rounded-t-[18px] rounded-b-[18px]"
+                >
+                  <img
+                    src="./images/home/approach-1.png"
+                    alt="Medical research"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Image 2 -->
+                <div
+                  class="h-[48%] overflow-hidden rounded-t-[18px] rounded-b-[18px]"
+                >
+                  <img
+                    src="./images/home/app-2.png"
+                    alt="Doctor"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- COLUMN 2 -->
+              <div class="w-1/3 flex flex-col gap-5">
+                <!-- Top Image -->
+                <div class="h-[30%] overflow-hidden rounded-[18px]">
+                  <img
+                    src="./images/home/app-3.png"
+                    alt="Medical professional"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Large Image -->
+                <div class="h-[70%] overflow-hidden rounded-[18px]">
+                  <img
+                    src="./images/home/appr-4.png"
+                    alt="Surgeon"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- COLUMN 3 -->
+              <div class="w-1/3 flex flex-col gap-5">
+                <!-- Large Image -->
+                <div class="h-[70%] overflow-hidden rounded-[18px]">
+                  <img
+                    src="./images/home/app-5.png"
+                    alt="Doctor with patient"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Small Image -->
+                <div class="h-[30%] overflow-hidden rounded-[18px]">
+                  <img
+                    src="./images/home/app-6.png"
+                    alt="Medical equipment"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials -->
+
+      <section class="py-20">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="text-center mb-12 md:mb-14">
+            <!-- Small title -->
+            <div class="flex items-center justify-center gap-1.5 mb-5">
+              <span class="text-darkBlue text-lg">✦</span>
+
+              <span class="text-darkBlue text-sm sm:text-base font-medium">
+                TESTIMONIALS
+              </span>
+            </div>
+
+            <!-- Main heading -->
+            <h2
+              class="text-darkBlue font-semibold font-jakarta text-3xl sm:text-4xl md:text-5xl lg:text-[54px] leading-tight"
+            >
+              Real Stories, Real Healing
+            </h2>
+          </div>
+
+          <!-- ================= CARDS WRAPPER ================= -->
+          <div class="relative">
+            <!-- Left Arrow -->
+            <button
+              class="absolute z-10 left-[-15px] sm:left-[-25px] lg:left-[-40px] top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#1689b5] text-white flex items-center justify-center shadow-md hover:bg-[#0f789f] transition"
+            >
+              <i class="fa-solid fa-chevron-left text-lg"></i>
+            </button>
+
+            <!-- Cards -->
+            <div class="flex flex-col md:flex-row gap-6">
+              <!-- ================= CARD 1 ================= -->
+              <div
+                class="w-full md:w-1/3 min-h-[235px] rounded-2xl bg-gradient-to-br from-white to-[#e7f5fc] shadow-[0_5px_20px_rgba(0,0,0,0.10)] p-7 sm:p-8"
+              >
+                <!-- Top -->
+                <div class="flex items-start gap-6">
+                  <!-- Profile Image -->
+                  <img
+                    src="./images/home/test-1.png"
+                    alt="Sara Ali Khan"
+                    class="w-20 h-20 rounded-full object-cover shrink-0"
+                  />
+
+                  <!-- Information -->
+                  <div>
+                    <h3 class="text-[#3f3f3f] text-xl font-semibold mb-2">
+                      Sara Ali Khan
+                    </h3>
+
+                    <p class="text-[#777] text-sm mb-2">Cardiologist Patient</p>
+
+                    <!-- Stars -->
+                    <div class="flex gap-1 text-[#1689b5]">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Review -->
+                <p class="text-[#444] text-base leading-6 mt-4 ml-[104px]">
+                  Thanks for all the services,<br />
+                  no doubt it is the best website.
+                </p>
+              </div>
+
+              <!-- ================= CARD 2 ================= -->
+              <div
+                class="w-full md:w-1/3 min-h-[235px] rounded-2xl bg-gradient-to-br from-white to-[#e7f5fc] shadow-[0_5px_20px_rgba(0,0,0,0.10)] p-7 sm:p-8"
+              >
+                <!-- Top -->
+                <div class="flex items-start gap-6">
+                  <!-- Profile Image -->
+                  <img
+                    src="./images/home/test-2.png"
+                    alt="Simon Targett"
+                    class="w-20 h-20 rounded-full object-cover shrink-0"
+                  />
+
+                  <!-- Information -->
+                  <div>
+                    <h3 class="text-[#3f3f3f] text-xl font-semibold mb-2">
+                      Simon Targett
+                    </h3>
+
+                    <p class="text-[#777] text-sm mb-2">Neurologist Patient</p>
+
+                    <!-- Stars -->
+                    <div class="flex gap-1 text-[#1689b5]">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Review -->
+                <p class="text-[#444] text-base leading-6 mt-4 ml-[104px]">
+                  Thanks for all the services,<br />
+                  no doubt it is the best website.
+                </p>
+              </div>
+
+              <!-- ================= CARD 3 ================= -->
+              <div
+                class="w-full md:w-1/3 min-h-[235px] rounded-2xl bg-gradient-to-br from-white to-[#e7f5fc] shadow-[0_5px_20px_rgba(0,0,0,0.10)] p-7 sm:p-8"
+              >
+                <!-- Top -->
+                <div class="flex items-start gap-6">
+                  <!-- Profile Image -->
+                  <img
+                    src="./images/home/test-3.png"
+                    alt="Sara Ali Khan"
+                    class="w-20 h-20 rounded-full object-cover shrink-0"
+                  />
+
+                  <!-- Information -->
+                  <div>
+                    <h3 class="text-[#3f3f3f] text-xl font-semibold mb-2">
+                      Sara Ali Khan
+                    </h3>
+
+                    <p class="text-[#3f3f3f] text-sm mb-2">
+                      Cardiologist Patient
+                    </p>
+
+                    <!-- Stars -->
+                    <div class="flex gap-1 text-[#1689b5]">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Review -->
+                <p class="text-[#444] text-base leading-6 mt-4 ml-[104px]">
+                  Thanks for all the services,<br />
+                  no doubt it is the best website.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button
+              class="absolute z-10 right-[-15px] sm:right-[-25px] lg:right-[-40px] top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#1689b5] text-white flex items-center justify-center shadow-md hover:bg-[#0f789f] transition"
+            >
+              <i class="fa-solid fa-chevron-right text-lg"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- blog -->
+       <section class="py-20">
+        <div class="container">
+          
+
+    <!-- TOP CONTENT -->
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
+
+      <div>
+        <!-- Small Heading -->
+        <div class="flex items-center gap-1.5 mb-6">
+          <span class="text-[#17617e] text-lg">✦</span>
+          <span class="text-[#17617e] text-[16px] font-medium">
+            BLOG
+          </span>
+        </div>
+
+        <!-- Main Heading -->
+        <h2 class="text-[#175e7c] 
+                   text-[38px] sm:text-[45px] md:text-[52px] lg:text-[58px]
+                   leading-[1.1] font-normal tracking-wide">
+          Stay Update With <br />
+          Our Latest Insight
+        </h2>
+      </div>
+
+      <!-- See All Blogs Button -->
+      <a href="#"
+         class="self-start md:self-end
+                flex items-center gap-3
+                border border-[#1681b5]
+                rounded-full
+                pl-5 pr-2 py-2
+                text-[#17617e]
+                text-sm
+                whitespace-nowrap
+                hover:bg-[#17617e] hover:text-white
+                transition duration-300">
+
+        <span>See All Blogs</span>
+
+        <span class="w-9 h-9 rounded-full
+                     bg-[#1681b5] text-white
+                     flex items-center justify-center
+                     text-lg">
+          →
+        </span>
+      </a>
+
+    </div>
+
+
+    <!-- BLOG CARDS -->
+    <div class="flex flex-col lg:flex-row gap-7">
+
+      <!-- CARD 1 -->
+      <article class="w-full lg:w-1/2
+                      flex flex-col sm:flex-row
+                      min-h-[400px]
+                      rounded-[20px]
+                      overflow-hidden
+                      bg-[#edf9fc]
+                      shadow-[0_5px_25px_rgba(0,0,0,0.12)]">
+
+        <!-- IMAGE -->
+        <div class="w-full sm:w-[45%] lg:w-[46%] h-[300px] sm:h-auto">
+          <img
+            src="./images/home/blog-left.png"
+            alt="Healthy vegetables"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- CONTENT -->
+        <div class="w-full sm:w-[55%] lg:w-[54%]
+                    p-6 md:p-7
+                    flex flex-col">
+
+          <!-- Category -->
+          <div>
+            <span class="inline-block
+                         border border-[#1681b5]
+                         rounded-full
+                         px-3 py-1
+                         text-[13px]
+                         text-[#1681b5]
+                         uppercase">
+              Vitamins & Supplements
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="mt-10
+                     text-[#153f50]
+                     text-[27px] md:text-[30px]
+                     leading-[1.05]
+                     font-normal">
+            Eating Right to Build Immunity Against Cold and Viral Infections
+          </h3>
+
+          <!-- Description -->
+          <p class="mt-8
+                    text-black
+                    text-[15px] md:text-[16px]
+                    leading-[1.45]">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit mollit........
+          </p>
+
+          <!-- META -->
+          <div class="mt-auto pt-8
+                      flex items-center
+                      gap-3
+                      text-[#17617e]
+                      text-[11px]
+                      uppercase
+                      whitespace-nowrap">
+
+            <span class="flex items-center gap-1">
+              <span class="text-[12px]">◉</span>
+              November 5, 2024
+            </span>
+
+            <span class="w-px h-4 bg-[#17617e]"></span>
+
+            <span>By Admin</span>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- CARD 2 -->
+      <article class="w-full lg:w-1/2
+                      flex flex-col sm:flex-row
+                      min-h-[400px]
+                      rounded-[20px]
+                      overflow-hidden
+                      bg-[#edf9fc]
+                      shadow-[0_5px_25px_rgba(0,0,0,0.12)]">
+
+        <!-- IMAGE -->
+        <div class="w-full sm:w-[45%] lg:w-[46%] h-[300px] sm:h-auto">
+          <img
+            src="./images/home/blog-right.png"
+            alt="Doctor giving vaccination"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- CONTENT -->
+        <div class="w-full sm:w-[55%] lg:w-[54%]
+                    p-6 md:p-7
+                    flex flex-col">
+
+          <!-- Category -->
+          <div>
+            <span class="inline-block
+                         border border-[#1681b5]
+                         rounded-full
+                         px-3 py-1
+                         text-[13px]
+                         text-[#1681b5]
+                         uppercase">
+              Coronavirus
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="mt-10
+                     text-[#153f50]
+                     text-[27px] md:text-[30px]
+                     leading-[1.05]
+                     font-normal">
+            12 Coronavirus Myths and Facts That You Should Be Aware Of
+          </h3>
+
+          <!-- Description -->
+          <p class="mt-8
+                    text-black
+                    text-[15px] md:text-[16px]
+                    leading-[1.45]">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit mollit........
+          </p>
+
+          <!-- META -->
+          <div class="mt-auto pt-8
+                      flex items-center
+                      gap-3
+                      text-[#17617e]
+                      text-[11px]
+                      uppercase
+                      whitespace-nowrap">
+
+            <span class="flex items-center gap-1">
+              <span class="text-[12px]">◉</span>
+              November 5, 2024
+            </span>
+
+            <span class="w-px h-4 bg-[#17617e]"></span>
+
+            <span>By Admin</span>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+
+        
+       </section>
+    </main>
+    <!-- footer -->
+     <footer class=" footer relative py-[100px]  text-white overflow-hidden font-sans">
+  <!-- Background DNA Strand Overlay -->
+<div class="container">
+
+  <!-- <div class="relative max-w-7xl mx-auto px-6 pt-16 pb-8"> -->
+    <!-- Top Content Flex Container -->
+    <div class="flex flex-wrap -mx-4 pb-12">
+      
+      <!-- Column 1: Brand & Socials -->
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0 flex flex-col items-start space-y-6">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <div class="logo mb-[40px]">
+            <img src="./images/home/logo.png" alt="logo">
+          </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center space-x-3 text-cyan-900">
+          <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-cyan-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-cyan-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-cyan-100 transition">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-cyan-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-cyan-100 transition">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: About Us -->
+      <div class="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+        <h3 class="text-[20px] font-jakarta font-bold mb-4">About Us</h3>
+        <ul class="space-y-5 text-cyan-100 text-sm">
+          <li><a href="#" class="hover:underline">Who we are</a></li>
+          <li><a href="#" class="hover:underline">Our Impact</a></li>
+          <li><a href="#" class="hover:underline">For Businesses</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Resources -->
+      <div class="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+        <h3 class="text-[20px] font-jakarta font-bold mb-4">Resources</h3>
+        <ul class="space-y-5 text-cyan-100 text-sm">
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Event</a></li>
+          <li><a href="#" class="hover:underline">Case Studies</a></li>
+          <li><a href="#" class="hover:underline">For Businesses</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Services -->
+      <div class="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+        <h3 class="text-[20px] font-jakarta font-bold mb-4">Services</h3>
+        <ul class="space-y-5 text-cyan-100 text-sm">
+          <li><a href="#" class="hover:underline">Search for doctors</a></li>
+          <li><a href="#" class="hover:underline">Search for hospitals</a></li>
+          <li><a href="#" class="hover:underline">Read health articles</a></li>
+          <li><a href="#" class="hover:underline">Health app</a></li>
+          <li><a href="#" class="hover:underline">Ask health questions</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5: Contact Us -->
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-4">
+        <h3 class="text-[20px] font-bold font-jakarta mb-4">Contact Us</h3>
+        <ul class="space-y-5 text-cyan-100 text-sm">
+          <li class="flex items-center space-x-2">
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <a href="mailto:contact@mediflow.com" class="hover:underline">contact@mediflow.com</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <a href="tel:123456789" class="hover:underline">123456789</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Newtown, Kolkata</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider Line -->
+    <div class="border-t border-cyan-800/60 pt-6"></div>
+
+    <!-- Bottom Bar (Flex) -->
+    <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-cyan-200/80 space-y-4 sm:space-y-0">
+      <div>
+        ©2025 MediFlow. All rights reserved.
+      </div>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms of Service</a>
+        <a href="#" class="hover:underline">Cookies Settings</a>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
