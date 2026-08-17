@@ -1,82 +1,127 @@
- @import "tailwindcss"; 
+@import "tailwindcss";
 
- @font-face {
-    font-family: 'DMSans';
-    src: url('../font/DMSans-VariableFont_opsz\,wght.ttf');
+@font-face {
+  font-family: "DMSans";
+  src: url("../font/DMSans-VariableFont_opsz\,wght.ttf");
 }
 @font-face {
-    font-family: 'Jakarta';
-    src: url('../font/PlusJakartaSans-VariableFont_wght.ttf');
+  font-family: "Jakarta";
+  src: url("../font/PlusJakartaSans-VariableFont_wght.ttf");
 }
-@theme{
-    --color-white:#FFFFFF;
-    --color-blue:#1E81AB;
-    --color-darkBlue:#155B79;
-    --font-dMSans:"DMSans";
-    --font-jakarta:"Jakarta";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-@layer base{
-    /* a{
+@theme {
+  --color-white: #ffffff;
+  --color-blue: #1e81ab;
+  --color-darkBlue: #155b79;
+  --font-dMSans: "DMSans";
+  --font-jakarta: "Jakarta";
+}
+@layer base {
+  /* a{
         text-decoration: none;
         @apply text-sm text-grey font-medium hover:text-pink;
     } */
-    body{
-       font-family: 'DMSans';
-       letter-spacing: 1px;
-    }
-    a{
-        display: inline-block;
-    }
+  body {
+    font-family: "DMSans";
+    letter-spacing: 1px;
+  }
+  a {
+    display: inline-block;
+  }
 }
-@utility container{
-    max-width:1240px;
-    width:100%;
-    margin:0 auto;
-    padding:0 24px;
+@utility container {
+  max-width: 1243px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-@layer components{
-    .row{
-        @apply flex flex-wrap;
-        margin: 0 -24px;
-    }
-    .col{
-         padding: 0 24px;
-    }
-    .col-100{
-        width: 100%;
-    }
-    .col-33{
-        width:33.33%;
-    }
-    .col-40{
-        width: 40%;
-    }
-    .col-50{
-        width: 50%;
-    }
-    .col-60{
-        width: 60%;
-    }
-    .col-25{
-         width:25%;
-    }
-    .banner{
-        background-image: url('../images/home/banner.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .about{
-        background-image: url(../images/home/about-bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+@utility col-100 {
+  width: 100%;
+}
 
+@utility col-30 {
+  width: 30%;
+}
+
+@utility col-70 {
+  width: 70%;
+}
+
+@utility col-33 {
+  width: 33.33%;
+}
+
+@utility col-40 {
+  width: 40%;
+}
+@utility col-50 {
+  width: 50%;
+}
+@utility col-60 {
+  width: 60%;
+}
+@utility col-20 {
+  width: 20%;
+}
+@utility col-15 {
+  width: 15%;
+}
+@utility col-25 {
+  width: 25%;
+}
+@layer components {
+  .row {
+    @apply flex flex-wrap;
+    margin: 0 -12px;
+  }
+  .col {
+    padding: 0 12px;
+  }
+
+  .banner {
+    background-image: url("../images/home/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media (max-width: 1023px) {
+    .banner {
+      background-position: 65% center;
     }
-    .footer{
-        background-image: url(../images/home/footer.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+  }
+
+  @media (max-width: 639px) {
+    .banner {
+      background-position: 68% center;
     }
+  }
+  .about {
+    background-image: url(../images/home/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .footer {
+    background-image: url(../images/home/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /* Tablet */
+@media (max-width: 1023px) {
+  .footer {
+    background-position: 55% center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+  .footer {
+    background-position: 60% center;
+  }
+}
 }

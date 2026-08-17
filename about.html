@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Healthcare Project</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="navbar absolute top-0 left-0 right-0 z-[1000] py-[20px] md:py-[20px]"
+      >
+        <div class="container">
+          <nav class="relative flex items-center justify-between">
+            <!-- ================= LOGO ================= -->
+            <div class="navbar_brand w-[75px] sm:w-[85px]">
+              <a href="#">
+                <img src="./images/home/logo.png" alt="logo" class="w-full" />
+              </a>
+            </div>
+
+            <!-- ================= DESKTOP NAV ================= -->
+            <div id="navlist" class="hidden lg:block">
+              <ul class="flex items-center justify-center">
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="index.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="about.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                    ><i class="fa-solid fa-circle text-[8px] mr-[3px]"></i>
+                    About Us
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="doctor.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    Doctors
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="blog.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    Blogs
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ================= RIGHT SIDE ================= -->
+            <div class="right flex items-center">
+              <!-- Bell -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img src="./images/about/bell.png" alt="bell" class="w-full" />
+              </div>
+
+              <!-- User -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img
+                  src="./images/about/human-face.png"
+                  alt="user"
+                  class="w-full"
+                />
+              </div>
+
+              <!-- Hamburger -->
+              <button
+                id="toggler"
+                type="button"
+                class="block lg:hidden cursor-pointer text-white text-[24px] sm:text-[28px]"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+
+            <!-- ================= MOBILE MENU ================= -->
+            <div
+              id="mobileMenu"
+              class="hidden lg:hidden absolute top-[75px] left-0 w-full bg-[#155B79] rounded-b-[10px] px-[25px] py-[20px]"
+            >
+              <ul class="flex flex-col">
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="index.html" class="text-[15px] text-white"> Home </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="about.html" class="text-[15px] text-white">
+                    About Us
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="doctor.html" class="text-[15px] text-white">
+                    Doctors
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="blog.html" class="text-[15px] text-white"> Blogs </a>
+                </li>
+
+                <li class="py-[12px]">
+                  <a href="contact.html" class="text-[15px] text-white">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <script src="./js/about.js"></script>
+  </body>
+</html>
