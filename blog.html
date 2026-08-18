@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Project</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="navbar absolute top-0 left-0 right-0 z-[1000] py-[25px] md:py-[20px]"
+      >
+        <div class="container">
+          <nav class="relative flex items-center justify-between">
+            <!-- ================= LOGO ================= -->
+            <div class="navbar_brand w-[75px] sm:w-[85px]">
+              <a href="#">
+                <img src="./images/home/logo.png" alt="logo" class="w-full" />
+              </a>
+            </div>
+
+            <!-- ================= DESKTOP NAV ================= -->
+            <div id="navlist" class="hidden lg:block">
+              <ul class="flex items-center justify-center">
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="index.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="about.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    About Us
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="doctor.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    Doctors
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="blog.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    <i class="fa-solid fa-circle text-[8px] mr-[3px]"></i> Blogs
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:underline"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ================= RIGHT SIDE ================= -->
+            <div class="right flex items-center">
+              <!-- Bell -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img src="./images/about/bell.png" alt="bell" class="w-full" />
+              </div>
+
+              <!-- User -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img
+                  src="./images/about/human-face.png"
+                  alt="user"
+                  class="w-full"
+                />
+              </div>
+
+              <!-- Hamburger -->
+              <button
+                id="toggler"
+                type="button"
+                class="block lg:hidden cursor-pointer text-white text-[24px] sm:text-[28px]"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+
+            <!-- ================= MOBILE MENU ================= -->
+            <div
+              id="mobileMenu"
+              class="hidden lg:hidden absolute top-[75px] left-0 w-full bg-[#155B79] rounded-b-[10px] px-[25px] py-[20px]"
+            >
+              <ul class="flex flex-col">
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="index.html" class="text-[15px] text-white"> Home </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="about.html" class="text-[15px] text-white">
+                    About Us
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="doctor.html" class="text-[15px] text-white">
+                    Doctors
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="blog.html" class="text-[15px] text-white"> Blogs </a>
+                </li>
+
+                <li class="py-[12px]">
+                  <a href="contact.html" class="text-[15px] text-white">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        class="relative mx-[10px] rounded-[20px] bg-[url('../images/blog/blog-banner.png')] bg-center bg-cover bg-no-repeat px-[15px] pt-[80px] pb-[60px] sm:mx-[15px] sm:rounded-[20px] sm:pt-[90px] sm:pb-[65px] md:mx-[10px] md:pt-[100px] md:pb-[75px] lg:pt-[125px] lg:pb-[75px]"
+      >
+        <div class="container relative">
+          <div class="text-center">
+            <!-- Heading -->
+            <h1
+              class="mb-[18px] font-jakarta text-[40px] font-semibold leading-[1.1] text-white sm:mb-[20px] sm:text-[50px] md:mb-[22px] md:text-[60px] lg:mb-[26px] lg:text-[80px]"
+            >
+              Blogs
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="mx-auto max-w-[300px] text-[14px] leading-[1.5] text-white sm:max-w-[500px] sm:text-[15px] md:max-w-[650px] md:text-[16px] lg:max-w-[760px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Ultrices volutpat amet
+              tortor vel eget quam. Interdum nunc vel malesuada pellentesque.
+              Dapibus in eu aenean in tincidunt.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- slider-card -->
+      <section class="blog py-[60px] sm:py-[70px] lg:py-[90px]">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <div class="mb-[45px] sm:mb-[50px] lg:mb-[60px]">
+            <a
+              href="#"
+              class="text-[18px] font-dMSans text-[#777777] sm:text-[20px]"
+            >
+              Home
+            </a>
+
+            <span class="mx-[8px] text-[20px] text-[#222222]">›</span>
+
+            <span class="text-[18px] font-dMSans text-[#111111] sm:text-[20px]">
+              Blogs
+            </span>
+          </div>
+
+          <!-- Blog Categories -->
+          <div class="mb-[55px] overflow-x-auto sm:mb-[60px] lg:mb-[70px]">
+            <div class="flex min-w-max justify-center px-[5px] sm:px-0">
+              <!-- Active -->
+              <a
+                href="#"
+                class="mr-[20px] min-w-[180px] rounded-[50px] border border-[#1e81ab] bg-[#1e81ab] px-[30px] py-[17px] text-center text-[16px] font-semibold text-white sm:mr-[30px] sm:min-w-[210px]"
+              >
+                Top Articles
+              </a>
+
+              <!-- Category -->
+              <a
+                href="#"
+                class="mr-[20px] min-w-[180px] rounded-[50px] border border-[#1e81ab] bg-white px-[30px] py-[17px] text-center text-[16px] font-semibold text-[#155b79] sm:mr-[30px] sm:min-w-[210px]"
+              >
+                Healthy Hair
+              </a>
+
+              <!-- Category -->
+              <a
+                href="#"
+                class="mr-[20px] min-w-[180px] rounded-[50px] border border-[#1e81ab] bg-white px-[30px] py-[17px] text-center text-[16px] font-semibold text-[#155b79] sm:mr-[30px] sm:min-w-[210px]"
+              >
+                Healthy Eating
+              </a>
+
+              <!-- Category -->
+              <a
+                href="#"
+                class="min-w-[180px] rounded-[50px] border border-[#1e81ab] bg-white px-[30px] py-[17px] text-center text-[16px] font-semibold text-[#155b79] sm:min-w-[210px]"
+              >
+                Healthy Skin
+              </a>
+            </div>
+          </div>
+
+          <!-- =========================
+         BLOG CARDS
+    ========================== -->
+
+          <div class="row">
+            <!-- ================= CARD 1 ================= -->
+            <div class="col col-100 mb-[24px] lg:col-50">
+              <article
+                class="h-full overflow-hidden rounded-[20px] border border-[#d8e3e7] bg-[#eefaff] shadow-[0_8px_25px_rgba(0,0,0,0.12)]"
+              >
+                <div class="row h-full">
+                  <!-- Image -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="h-[280px] sm:h-[330px] lg:h-full lg:min-h-[420px]"
+                    >
+                      <img
+                        src="../images/blog/blog-1.png"
+                        alt="Healthy vegetables"
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="flex h-full flex-col px-[24px] py-[30px] sm:px-[30px] sm:py-[35px] lg:px-[24px] lg:py-[34px]"
+                    >
+                      <!-- Category -->
+                      <span
+                        class="inline-block w-fit rounded-[30px] border border-[#1e81ab] px-[12px] py-[5px] text-[12px] font-medium uppercase text-[#1e81ab] sm:text-[13px]"
+                      >
+                        Vitamins & Supplements
+                      </span>
+
+                      <!-- Title -->
+                      <h3
+                        class="mt-[30px] font-jakarta text-[27px] font-normal leading-[1.08] text-[#16465a] sm:text-[30px] lg:mt-[38px] lg:text-[32px]"
+                      >
+                        Eating Right to Build Immunity Against Cold and Viral
+                        Infections
+                      </h3>
+
+                      <!-- Description -->
+                      <p
+                        class="mt-[30px] text-[15px] leading-[1.45] tracking-[0px] text-[#111111] sm:text-[16px] lg:mt-[40px]"
+                      >
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit.........
+                      </p>
+
+                      <!-- Meta -->
+                      <div
+                        class="mt-auto pt-[30px] text-[11px] uppercase text-[#155b79] sm:text-[12px]"
+                      >
+                        <span>
+                          <i class="fa-solid fa-clock mr-[6px]"></i>
+                          November 5, 2024
+                        </span>
+
+                        <span class="mx-[8px]">|</span>
+
+                        <span>By Admin</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ================= CARD 2 ================= -->
+            <div class="col col-100 mb-[24px] lg:col-50">
+              <article
+                class="h-full overflow-hidden rounded-[20px] border border-[#d8e3e7] bg-[#eefaff] shadow-[0_8px_25px_rgba(0,0,0,0.12)]"
+              >
+                <div class="row h-full">
+                  <!-- Image -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="h-[280px] sm:h-[330px] lg:h-full lg:min-h-[420px]"
+                    >
+                      <img
+                        src="../images/blog/blog-2.png"
+                        alt="Coronavirus vaccination"
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="flex h-full flex-col px-[24px] py-[30px] sm:px-[30px] sm:py-[35px] lg:px-[24px] lg:py-[34px]"
+                    >
+                      <span
+                        class="inline-block w-fit rounded-[30px] border border-[#1e81ab] px-[12px] py-[5px] text-[12px] font-medium uppercase text-[#1e81ab] sm:text-[13px]"
+                      >
+                        Coronavirus
+                      </span>
+
+                      <h3
+                        class="mt-[30px] font-jakarta text-[27px] font-normal leading-[1.08] text-[#16465a] sm:text-[30px] lg:mt-[38px] lg:text-[32px]"
+                      >
+                        12 Coronavirus Myths and Facts That You Should Be Aware
+                        Of
+                      </h3>
+
+                      <p
+                        class="mt-[30px] text-[15px] leading-[1.45] tracking-[0px] text-[#111111] sm:text-[16px] lg:mt-[40px]"
+                      >
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit.........
+                      </p>
+
+                      <div
+                        class="mt-auto pt-[30px] text-[11px] uppercase text-[#155b79] sm:text-[12px]"
+                      >
+                        <span>
+                          <i class="fa-solid fa-clock mr-[6px]"></i>
+                          November 5, 2024
+                        </span>
+
+                        <span class="mx-[8px]">|</span>
+
+                        <span>By Admin</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ================= CARD 3 ================= -->
+            <div class="col col-100 mb-[24px] lg:col-50">
+              <article
+                class="h-full overflow-hidden rounded-[20px] border border-[#d8e3e7] bg-[#eefaff] shadow-[0_8px_25px_rgba(0,0,0,0.12)]"
+              >
+                <div class="row h-full">
+                  <!-- Image -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="h-[280px] bg-[#001019] sm:h-[330px] lg:h-full lg:min-h-[420px]"
+                    >
+                      <img
+                        src="../images/blog/blog-3.png"
+                        alt="Wisdom tooth"
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="flex h-full flex-col px-[24px] py-[30px] sm:px-[30px] sm:py-[35px] lg:px-[24px] lg:py-[34px]"
+                    >
+                      <span
+                        class="inline-block w-fit rounded-[30px] border border-[#1e81ab] px-[12px] py-[5px] text-[12px] font-medium uppercase text-[#1e81ab]"
+                      >
+                        Dental Care
+                      </span>
+
+                      <h3
+                        class="mt-[30px] font-jakarta text-[27px] font-normal leading-[1.08] text-[#16465a] sm:text-[30px] lg:mt-[38px] lg:text-[32px]"
+                      >
+                        Words of Wisdom About 'Wisdom Teeth'
+                      </h3>
+
+                      <p
+                        class="mt-[30px] text-[15px] leading-[1.45] tracking-[0px] text-[#111111] sm:text-[16px] lg:mt-[40px]"
+                      >
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit.........
+                      </p>
+
+                      <div
+                        class="mt-auto pt-[30px] text-[11px] uppercase text-[#155b79] sm:text-[12px]"
+                      >
+                        <span>
+                          <i class="fa-solid fa-clock mr-[6px]"></i>
+                          November 5, 2024
+                        </span>
+
+                        <span class="mx-[8px]">|</span>
+
+                        <span>By Admin</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ================= CARD 4 ================= -->
+            <div class="col col-100 mb-[24px] lg:col-50">
+              <article
+                class="h-full overflow-hidden rounded-[20px] border border-[#d8e3e7] bg-[#eefaff] shadow-[0_8px_25px_rgba(0,0,0,0.12)]"
+              >
+                <div class="row h-full">
+                  <!-- Image -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="h-[280px] sm:h-[330px] lg:h-full lg:min-h-[420px]"
+                    >
+                      <img
+                        src="../images/blog/blog-4.png"
+                        alt="Skin care"
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="flex h-full flex-col px-[24px] py-[30px] sm:px-[30px] sm:py-[35px] lg:px-[24px] lg:py-[34px]"
+                    >
+                      <span
+                        class="inline-block w-fit rounded-[30px] border border-[#1e81ab] px-[12px] py-[5px] text-[12px] font-medium uppercase text-[#1e81ab]"
+                      >
+                        Skin Care
+                      </span>
+
+                      <h3
+                        class="mt-[30px] font-jakarta text-[27px] font-normal leading-[1.08] text-[#16465a] sm:text-[30px] lg:mt-[38px] lg:text-[32px]"
+                      >
+                        8 Ways to Protect Your Skin From Pollution
+                      </h3>
+
+                      <p
+                        class="mt-[30px] text-[15px] leading-[1.45] tracking-[0px] text-[#111111] sm:text-[16px] lg:mt-[40px]"
+                      >
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit.........
+                      </p>
+
+                      <div
+                        class="mt-auto pt-[30px] text-[11px] uppercase text-[#155b79] sm:text-[12px]"
+                      >
+                        <span>
+                          <i class="fa-solid fa-clock mr-[6px]"></i>
+                          November 5, 2024
+                        </span>
+
+                        <span class="mx-[8px]">|</span>
+
+                        <span>By Admin</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ================= CARD 5 ================= -->
+            <div class="col col-100 mb-[24px] lg:col-50">
+              <article
+                class="h-full overflow-hidden rounded-[20px] border border-[#d8e3e7] bg-[#eefaff] shadow-[0_8px_25px_rgba(0,0,0,0.12)]"
+              >
+                <div class="row h-full">
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="h-[280px] sm:h-[330px] lg:h-full lg:min-h-[420px]"
+                    >
+                      <img
+                        src="../images/blog/blog-5.png"
+                        alt="Alcohol consumption"
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="flex h-full flex-col px-[24px] py-[30px] sm:px-[30px] sm:py-[35px] lg:px-[24px] lg:py-[34px]"
+                    >
+                      <span
+                        class="inline-block w-fit rounded-[30px] border border-[#1e81ab] px-[12px] py-[5px] text-[12px] font-medium uppercase text-[#1e81ab]"
+                      >
+                        Obesity
+                      </span>
+
+                      <h3
+                        class="mt-[30px] font-jakarta text-[27px] font-normal leading-[1.08] text-[#16465a] sm:text-[30px] lg:mt-[38px] lg:text-[32px]"
+                      >
+                        Limit Your Alcohol Consumption
+                      </h3>
+
+                      <p
+                        class="mt-[30px] text-[15px] leading-[1.45] tracking-[0px] text-[#111111] sm:text-[16px] lg:mt-[40px]"
+                      >
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit.........
+                      </p>
+
+                      <div
+                        class="mt-auto pt-[30px] text-[11px] uppercase text-[#155b79] sm:text-[12px]"
+                      >
+                        <span>
+                          <i class="fa-solid fa-clock mr-[6px]"></i>
+                          November 5, 2024
+                        </span>
+
+                        <span class="mx-[8px]">|</span>
+
+                        <span>By Admin</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- ================= CARD 6 ================= -->
+            <div class="col col-100 mb-[24px] lg:col-50">
+              <article
+                class="h-full overflow-hidden rounded-[20px] border border-[#d8e3e7] bg-[#eefaff] shadow-[0_8px_25px_rgba(0,0,0,0.12)]"
+              >
+                <div class="row h-full">
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="h-[280px] sm:h-[330px] lg:h-full lg:min-h-[420px]"
+                    >
+                      <img
+                        src="../images/blog/blog-6.png"
+                        alt="Exam anxiety"
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col col-100 lg:col-50">
+                    <div
+                      class="flex h-full flex-col px-[24px] py-[30px] sm:px-[30px] sm:py-[35px] lg:px-[24px] lg:py-[34px]"
+                    >
+                      <span
+                        class="inline-block w-fit rounded-[30px] border border-[#1e81ab] px-[12px] py-[5px] text-[12px] font-medium uppercase text-[#1e81ab]"
+                      >
+                        Coronavirus
+                      </span>
+
+                      <h3
+                        class="mt-[30px] font-jakarta text-[27px] font-normal leading-[1.08] text-[#16465a] sm:text-[30px] lg:mt-[38px] lg:text-[32px]"
+                      >
+                        Say Goodbye To Exam Phobia
+                      </h3>
+
+                      <p
+                        class="mt-[30px] text-[15px] leading-[1.45] tracking-[0px] text-[#111111] sm:text-[16px] lg:mt-[40px]"
+                      >
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit.........
+                      </p>
+
+                      <div
+                        class="mt-auto pt-[30px] text-[11px] uppercase text-[#155b79] sm:text-[12px]"
+                      >
+                        <span>
+                          <i class="fa-solid fa-clock mr-[6px]"></i>
+                          November 5, 2024
+                        </span>
+
+                        <span class="mx-[8px]">|</span>
+
+                        <span>By Admin</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/blog.js"></script>
+  </body>
+</html>

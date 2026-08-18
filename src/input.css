@@ -112,16 +112,36 @@
     background-position: center;
   }
   /* Tablet */
-@media (max-width: 1023px) {
-  .footer {
-    background-position: 55% center;
+  @media (max-width: 1023px) {
+    .footer {
+      background-position: 55% center;
+    }
   }
-}
 
-/* Mobile */
-@media (max-width: 639px) {
-  .footer {
-    background-position: 60% center;
+  /* Mobile */
+  @media (max-width: 639px) {
+    .footer {
+      background-position: 60% center;
+    }
+  }
+  /* about-page */
+  .bluecover {
+    background-image: url("../images/about/about-bluecover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .blogSwiper .swiper-slide {
+    height: auto;
+  }
+
+  .blogSwiper .swiper-slide > article {
+    height: 100%;
+  }
+
+  .blogSwiper .row {
+    height: 100%;
   }
 }
-}
+/* about-banner */
