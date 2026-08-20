@@ -5,30 +5,63 @@ toggler.addEventListener("click", function () {
   mobileMenu.classList.toggle("hidden");
 });
 
- const blogSwiper = new Swiper(".blogSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    speed: 700,
+const blogCards = document.querySelectorAll(".blog-card");
 
-    navigation: {
-      nextEl: ".blog-next",
-      prevEl: ".blog-prev",
-    },
+const prevButton = document.getElementById("blogPrev");
+const nextButton = document.getElementById("blogNext");
+const pageButton = document.getElementById("blogPage");
 
-    pagination: {
-      el: ".blog-pagination",
-      type: "fraction",
-    },
+const cardsPerPage = 6;
 
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 24,
-      },
+let currentPage = 1;
 
-      1024: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-    },
+const totalPages = Math.ceil(blogCards.length / cardsPerPage);
+
+function showPage(page) {
+  currentPage = page;
+
+  blogCards.forEach((card, index) => {
+    const start = (currentPage - 1) * cardsPerPage;
+    const end = start + cardsPerPage;
+
+    if (index >= start && index < end) {
+      card.classList.remove("hidden");
+    } else {
+      card.classList.add("hidden");
+    }
   });
+
+  pageButton.textContent = currentPage;
+
+  // Previous button
+  if (currentPage === 1) {
+    prevButton.disabled = true;
+    prevButton.classList.add("opacity-50", "cursor-not-allowed");
+  } else {
+    prevButton.disabled = false;
+    prevButton.classList.remove("opacity-50", "cursor-not-allowed");
+  }
+
+  // Next button
+  if (currentPage === totalPages) {
+    nextButton.disabled = true;
+    nextButton.classList.add("opacity-50", "cursor-not-allowed");
+  } else {
+    nextButton.disabled = false;
+    nextButton.classList.remove("opacity-50", "cursor-not-allowed");
+  }
+}
+
+prevButton.addEventListener("click", function () {
+  if (currentPage > 1) {
+    showPage(currentPage - 1);
+  }
+});
+
+nextButton.addEventListener("click", function () {
+  if (currentPage < totalPages) {
+    showPage(currentPage + 1);
+  }
+});
+
+showPage(1);

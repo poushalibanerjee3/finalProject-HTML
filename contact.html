@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Project</title>
+    <!-- Font Awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="navbar absolute top-0 left-0 right-0 z-[1000] py-[25px] md:py-[20px]"
+      >
+        <div class="container">
+          <nav class="relative flex items-center justify-between">
+            <!-- ================= LOGO ================= -->
+            <div class="navbar_brand w-[75px] sm:w-[85px]">
+              <a href="#">
+                <img src="./images/home/logo.png" alt="logo" class="w-full" />
+              </a>
+            </div>
+
+            <!-- ================= DESKTOP NAV ================= -->
+            <div id="navlist" class="hidden lg:block">
+              <ul class="flex items-center justify-center">
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="index.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="about.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    About Us
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="doctor.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    Doctors
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="blog.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    Blogs
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    <i class="fa-solid fa-circle text-[8px] mr-[3px]"></i>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ================= RIGHT SIDE ================= -->
+            <div class="right flex items-center">
+              <!-- Bell -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img src="./images/about/bell.png" alt="bell" class="w-full" />
+              </div>
+
+              <!-- User -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img
+                  src="./images/about/human-face.png"
+                  alt="user"
+                  class="w-full"
+                />
+              </div>
+
+              <!-- Hamburger -->
+              <button
+                id="toggler"
+                type="button"
+                class="block lg:hidden cursor-pointer text-white text-[24px] sm:text-[28px]"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+
+            <!-- ================= MOBILE MENU ================= -->
+            <div
+              id="mobileMenu"
+              class="hidden lg:hidden absolute top-[75px] left-0 w-full bg-[#155B79] rounded-b-[10px] px-[25px] py-[20px]"
+            >
+              <ul class="flex flex-col">
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="index.html" class="text-[15px] text-white"> Home </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="about.html" class="text-[15px] text-white">
+                    About Us
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="doctor.html" class="text-[15px] text-white">
+                    Doctors
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="blog.html" class="text-[15px] text-white"> Blogs </a>
+                </li>
+
+                <li class="py-[12px]">
+                  <a href="contact.html" class="text-[15px] text-white">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- banner part -->
+      <section
+        class="relative mx-[10px] rounded-[20px] bg-[url('../images/contact/contact-banner.png')] bg-center bg-cover bg-no-repeat px-[15px] pt-[80px] pb-[60px] sm:mx-[15px] sm:rounded-[20px] sm:pt-[90px] sm:pb-[65px] md:mx-[10px] md:pt-[100px] md:pb-[75px] lg:pt-[125px] lg:pb-[75px]"
+      >
+        <div class="container relative">
+          <div class="text-center">
+            <!-- Heading -->
+            <h1
+              class="mb-[18px] font-jakarta text-[40px] font-semibold leading-[1.1] text-white sm:mb-[20px] sm:text-[50px] md:mb-[22px] md:text-[60px] lg:mb-[26px] lg:text-[80px]"
+            >
+              Contact Us
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="mx-auto max-w-[300px] text-[14px] leading-[1.5] text-white sm:max-w-[500px] sm:text-[15px] md:max-w-[650px] md:text-[16px] lg:max-w-[760px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Ultrices volutpat amet
+              tortor vel eget quam. Interdum nunc vel malesuada pellentesque.
+              Dapibus in eu aenean in tincidunt.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- contact-map -->
+      <section class="contact-office py-[50px] sm:py-[60px] tracking-normal">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <div class="breadcrumb mb-[40px] sm:mb-[45px] lg:mb-[50px]">
+            <ul class="flex items-center gap-[10px] text-[18px] sm:text-[20px]">
+              <li>
+                <a
+                  href="#"
+                  class="font-dmsans font-normal text-[#888888] transition-all duration-300 hover:text-[#16617D]"
+                >
+                  Home
+                </a>
+              </li>
+
+              <li class="text-[22px] text-[#222222]">›</li>
+
+              <li>
+                <span class="font-dmsans font-normal text-[#222222]">
+                  Contact Us
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Office Cards -->
+          <div class="grid grid-cols-1 gap-[30px] lg:grid-cols-2 lg:gap-[45px]">
+            <!-- Delhi Office -->
+            <div
+              class="office-card overflow-hidden rounded-[20px] border border-[#B8C4C8] bg-gradient-to-b from-[#F2FBFD] to-[#BDECF4] p-[22px] shadow-[0_5px_20px_rgba(0,0,0,0.15)] sm:p-[25px] lg:p-[22px]"
+            >
+              <!-- Card Heading -->
+              <div class="border-b border-[#B9C4C8]">
+                <h2
+                  class="relative inline-block pb-[20px] font-jakarta text-[34px] font-semibold leading-[1.2] text-[#155B79] sm:text-[38px] lg:text-[32px]"
+                >
+                  Delhi Office
+
+                  <!-- Blue underline -->
+                  <span
+                    class="absolute bottom-[-1px] left-0 h-[10px] w-[210px] rounded-t-[8px] bg-[#1594C0] sm:w-[220px]"
+                  ></span>
+                </h2>
+              </div>
+
+              <!-- Call Us -->
+              <div class="pt-[25px] sm:pt-[28px]">
+                <h3
+                  class="mb-[8px] font-medium text-[24px] font-jakarta uppercase leading-[1.2] text-[#938F8F]"
+                >
+                  Call Us
+                </h3>
+
+                <a
+                  href="tel:+0008967253"
+                  class="font-dmsans text-[20px] font-semibold text-[#1E1E1E] sm:text-[20px]"
+                >
+                  +0008967253
+                </a>
+              </div>
+
+              <!-- Email -->
+              <div class="mt-[38px] sm:mt-[40px]">
+                <h3
+                  class="mb-[8px] font-jakarta text-[24px] font-medium uppercase leading-[1.2] text-[#938F8F]"
+                >
+                  Send Us Mail
+                </h3>
+
+                <a
+                  href="mailto:mediflow.delhi@email.com"
+                  class="break-all font-dmsans text-[20px] font-semibold text-[#1E1E1E]"
+                >
+                  mediflow.delhi@email.com
+                </a>
+              </div>
+
+              <!-- Address -->
+              <div class="mt-[38px] sm:mt-[40px]">
+                <h3
+                  class="mb-[8px] font-jakarta text-[24px] font-medium uppercase leading-[1.2] text-[#938F8F]"
+                >
+                  Visit Our Office
+                </h3>
+
+                <p
+                  class="text-[20px] font-semibold leading-[1.4] text-[#1E1E1E]"
+                >
+                  20/A New Delhi, India
+                </p>
+              </div>
+
+              <!-- Delhi Map -->
+              <div
+                class="mt-[35px] overflow-hidden rounded-[25px] border border-[#D1D1D1] sm:mt-[38px]"
+              >
+                <iframe
+                  src="https://www.google.com/maps?q=New+Delhi,+India&output=embed"
+                  class="h-[280px] w-full border-0 sm:h-[330px] lg:h-[325px]"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Delhi Office Location"
+                ></iframe>
+              </div>
+            </div>
+
+            <!-- Kolkata Office -->
+            <div
+              class="office-card overflow-hidden rounded-[20px] border border-[#B8C4C8] bg-gradient-to-b from-[#F2FBFD] to-[#BDECF4] p-[22px] shadow-[0_5px_20px_rgba(0,0,0,0.15)] sm:p-[25px] lg:p-[22px]"
+            >
+              <!-- Card Heading -->
+              <div class="border-b border-[#B9C4C8]">
+                <h2
+                  class="relative inline-block pb-[20px] font-jakarta text-[34px] font-semibold leading-[1.2] text-[#155B79] sm:text-[38px] lg:text-[32px]"
+                >
+                  Kolkata Office
+
+                  <!-- Blue underline -->
+                  <span
+                    class="absolute bottom-[-1px] left-0 h-[10px] w-[255px] rounded-t-[8px] bg-[#1594C0] sm:w-[265px]"
+                  ></span>
+                </h2>
+              </div>
+
+              <!-- Call Us -->
+              <div class="pt-[25px] sm:pt-[28px]">
+                <h3
+                  class="mb-[8px] font-dmsans text-[24px] font-medium uppercase leading-[1.2] text-[#938F8F]"
+                >
+                  Call Us
+                </h3>
+
+                <a
+                  href="tel:+0008967251"
+                  class="font-dmsans text-[20px] font-semibold text-[#1E1E1E]"
+                >
+                  +0008967251
+                </a>
+              </div>
+
+              <!-- Email -->
+              <div class="mt-[38px] sm:mt-[40px]">
+                <h3
+                  class="mb-[8px] font-dmsans text-[24px] font-medium uppercase leading-[1.2] text-[#938F8F]"
+                >
+                  Send Us Mail
+                </h3>
+
+                <a
+                  href="mailto:mediflow.kolkata@email.com"
+                  class="break-all font-dmsans text-[20px] font-semibold text-[#1E1E1E] sm:text-[20px]"
+                >
+                  mediflow.kolkata@email.com
+                </a>
+              </div>
+
+              <!-- Address -->
+              <div class="mt-[38px] sm:mt-[40px]">
+                <h3
+                  class="mb-[8px] font-jakarta text-[24px] font-medium uppercase leading-[1.2] text-[#938F8F]"
+                >
+                  Visit Our Office
+                </h3>
+
+                <p
+                  class="font-dmsans text-[20px] font-semibold leading-[1.4] text-[#1E1E1E]"
+                >
+                  20/B New Town, Kolkata, India
+                </p>
+              </div>
+
+              <!-- Kolkata Map -->
+              <div
+                class="mt-[35px] overflow-hidden rounded-[25px] border border-[#D1D1D1] sm:mt-[38px]"
+              >
+                <iframe
+                  src="https://www.google.com/maps?q=New+Town,+Kolkata,+India&output=embed"
+                  class="h-[280px] w-full border-0 sm:h-[330px] lg:h-[325px]"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Kolkata Office Location"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer part -->
+    <footer
+      class="footer text-white py-[50px] sm:py-[60px] lg:py-[90px] tracking-normal"
+    >
+      <div class="container">
+        <!-- ================= FOOTER TOP ================= -->
+        <div class="row">
+          <!-- BRAND -->
+          <div
+            class="col col-100 sm:col-100 md:col-30 lg:col-30 mb-[50px] md:mb-[50px] lg:mb-0"
+          >
+            <div class="flex flex-col items-center md:items-center">
+              <!-- Logo -->
+              <div class="mb-[35px] sm:mb-[45px] lg:mb-[70px]">
+                <a href="#">
+                  <img
+                    src="./images/home/logo.png"
+                    alt="MediFlow"
+                    class="w-[85px] sm:w-[90px] lg:w-[98px] h-auto"
+                  />
+                </a>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="flex items-center">
+                <a href="#" class="mr-[12px] sm:mr-[15px] lg:mr-[18px]">
+                  <img
+                    src="./images/home/fb.png"
+                    alt="Facebook"
+                    class="w-[26px] sm:w-[28px] lg:w-[30px] h-auto"
+                  />
+                </a>
+
+                <a href="#" class="mr-[12px] sm:mr-[15px] lg:mr-[18px]">
+                  <img
+                    src="./images/home/insta.png"
+                    alt="Instagram"
+                    class="w-[26px] sm:w-[28px] lg:w-[30px] h-auto"
+                  />
+                </a>
+
+                <a href="#" class="mr-[12px] sm:mr-[15px] lg:mr-[18px]">
+                  <img
+                    src="./images/home/twitter.png"
+                    alt="X"
+                    class="w-[23px] sm:w-[25px] lg:w-[26px] h-auto"
+                  />
+                </a>
+
+                <a href="#" class="mr-[12px] sm:mr-[15px] lg:mr-[18px]">
+                  <img
+                    src="./images/home/linkdn.png"
+                    alt="LinkedIn"
+                    class="w-[26px] sm:w-[28px] lg:w-[30px] h-auto"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    src="./images/home/yt.png"
+                    alt="YouTube"
+                    class="w-[32px] sm:w-[35px] lg:w-[38px] h-auto"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ABOUT US -->
+          <div
+            class="col col-50 sm:col-50 md:col-25 lg:col-15 mb-[40px] md:mb-[50px] lg:mb-0"
+          >
+            <p
+              class="font-bold font-jakarta text-[18px] sm:text-[20px] lg:text-[20px] leading-[1.3] mb-[16px] sm:mb-[18px]"
+            >
+              About Us
+            </p>
+
+            <ul>
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Who we are
+                </a>
+              </li>
+
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Our Impact
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  For Businesses
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- RESOURCES -->
+          <div
+            class="col col-50 sm:col-50 md:col-25 lg:col-15 mb-[40px] md:mb-[50px] lg:mb-0"
+          >
+            <p
+              class="font-bold font-jakarta text-[18px] sm:text-[20px] lg:text-[20px] leading-[1.3] mb-[16px] sm:mb-[18px]"
+            >
+              Resources
+            </p>
+
+            <ul>
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
+
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Event
+                </a>
+              </li>
+
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Case Studies
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  For Businesses
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SERVICES -->
+          <div
+            class="col col-100 sm:col-50 md:col-50 lg:col-20 mb-[40px] md:mb-[50px] lg:mb-0"
+          >
+            <p
+              class="font-bold font-jakarta text-[18px] sm:text-[20px] lg:text-[20px] leading-[1.3] mb-[16px] sm:mb-[18px]"
+            >
+              Services
+            </p>
+
+            <ul>
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Search for doctors
+                </a>
+              </li>
+
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Search for hospitals
+                </a>
+              </li>
+
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Read health articles
+                </a>
+              </li>
+
+              <li class="mb-[12px] sm:mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Health app
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Ask health questions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="col col-100 sm:col-100 md:col-50 lg:col-20">
+            <p
+              class="font-bold font-jakarta text-[18px] sm:text-[20px] lg:text-[20px] leading-[1.3] mb-[16px] sm:mb-[18px]"
+            >
+              Contact Us
+            </p>
+
+            <ul>
+              <!-- Email -->
+              <li class="flex items-start mb-[15px] sm:mb-[18px]">
+                <img
+                  src="./images/home/mail.png"
+                  alt=""
+                  class="w-[21px] sm:w-[23px] lg:w-[25px] h-auto shrink-0 mr-[8px]"
+                />
+
+                <a
+                  href="mailto:contact@mediflow.com"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4]"
+                >
+                  contact@mediflow.com
+                </a>
+              </li>
+
+              <!-- Phone -->
+              <li class="flex items-start mb-[15px] sm:mb-[18px]">
+                <img
+                  src="./images/home/phone.png"
+                  alt=""
+                  class="w-[21px] sm:w-[23px] lg:w-[25px] h-auto shrink-0 mr-[8px]"
+                />
+
+                <a
+                  href="tel:123456789"
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4]"
+                >
+                  123456789
+                </a>
+              </li>
+
+              <!-- Location -->
+              <li class="flex items-start">
+                <img
+                  src="./images/home/map-pin.png"
+                  alt=""
+                  class="w-[21px] sm:w-[23px] lg:w-[25px] h-auto shrink-0 mr-[8px]"
+                />
+
+                <span
+                  class="text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.4]"
+                >
+                  Newtown, Kolkata
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ================= FOOTER BOTTOM ================= -->
+        <div class="mt-[45px] sm:mt-[50px] pt-[25px] sm:pt-[30px] px-[20px]">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between"
+          >
+            <!-- Copyright -->
+            <p
+              class="text-[12px] sm:text-[13px] lg:text-[15px] leading-[1.4] mb-[15px] md:mb-0"
+            >
+              ©2025 MediFlow. All rights reserved.
+            </p>
+
+            <!-- Bottom Links -->
+            <ul class="flex flex-wrap items-center">
+              <li class="mr-[15px] sm:mr-[20px] mb-[8px] md:mb-0">
+                <a
+                  href="#"
+                  class="text-[12px] sm:text-[13px] lg:text-[14px] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li class="mr-[15px] sm:mr-[20px] mb-[8px] md:mb-0">
+                <a
+                  href="#"
+                  class="text-[12px] sm:text-[13px] lg:text-[14px] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Terms of Service
+                </a>
+              </li>
+
+              <li class="mb-[8px] md:mb-0">
+                <a
+                  href="#"
+                  class="text-[12px] sm:text-[13px] lg:text-[14px] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Cookies Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

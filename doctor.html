@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Project</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="navbar absolute top-0 left-0 right-0 z-[1000] py-[25px] md:py-[20px]"
+      >
+        <div class="container">
+          <nav class="relative flex items-center justify-between">
+            <!-- ================= LOGO ================= -->
+            <div class="navbar_brand w-[75px] sm:w-[85px]">
+              <a href="#">
+                <img src="./images/home/logo.png" alt="logo" class="w-full" />
+              </a>
+            </div>
+
+            <!-- ================= DESKTOP NAV ================= -->
+            <div id="navlist" class="hidden lg:block">
+              <ul class="flex items-center justify-center">
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="index.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="about.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    About Us
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="doctor.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    <i class="fa-solid fa-circle text-[8px] mr-[3px]"></i
+                    >Doctors
+                  </a>
+                </li>
+
+                <li class="mr-8 xl:mr-12.5">
+                  <a
+                    href="blog.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    Blogs
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-[15px] xl:text-[16px] text-white hover:text-amber-100"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ================= RIGHT SIDE ================= -->
+            <div class="right flex items-center">
+              <!-- Bell -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img src="./images/about/bell.png" alt="bell" class="w-full" />
+              </div>
+
+              <!-- User -->
+              <div class="mr-[8px] sm:mr-[10px] w-[42px] sm:w-[52px]">
+                <img
+                  src="./images/about/human-face.png"
+                  alt="user"
+                  class="w-full"
+                />
+              </div>
+
+              <!-- Hamburger -->
+              <button
+                id="toggler"
+                type="button"
+                class="block lg:hidden cursor-pointer text-white text-[24px] sm:text-[28px]"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+
+            <!-- ================= MOBILE MENU ================= -->
+            <div
+              id="mobileMenu"
+              class="hidden lg:hidden absolute top-[75px] left-0 w-full bg-[#155B79] rounded-b-[10px] px-[25px] py-[20px]"
+            >
+              <ul class="flex flex-col">
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="index.html" class="text-[15px] text-white"> Home </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="about.html" class="text-[15px] text-white">
+                    About Us
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="doctor.html" class="text-[15px] text-white">
+                    Doctors
+                  </a>
+                </li>
+
+                <li class="border-b border-white/20 py-[12px]">
+                  <a href="blog.html" class="text-[15px] text-white"> Blogs </a>
+                </li>
+
+                <li class="py-[12px]">
+                  <a href="contact.html" class="text-[15px] text-white">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        class="about_banner relative mx-[10px] rounded-[20px] bg-[url('../images/doctor/doctor-banner.png')] bg-center bg-cover bg-no-repeat px-[15px] pt-[80px] pb-[60px] sm:mx-[15px] sm:rounded-[20px] sm:pt-[90px] sm:pb-[65px] md:mx-[10px] md:pt-[100px] md:pb-[75px] lg:pt-[130px] lg:pb-[80px]"
+      >
+        <div class="container relative">
+          <div class="text-center mb-[170px]">
+            <!-- Heading -->
+            <h1
+              class="mb-[18px] font-jakarta text-[40px] font-semibold leading-[1.1] text-white sm:mb-[20px] sm:text-[50px] md:mb-[22px] md:text-[60px] lg:mb-[26px] lg:text-[80px]"
+            >
+              Doctors
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="mx-auto max-w-[300px] text-[14px] font-normal leading-[1.5] text-white sm:max-w-[500px] sm:text-[15px] md:max-w-[650px] md:text-[16px] lg:max-w-[760px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Ultrices volutpat amet
+              tortor vel eget quam. Interdum nunc vel malesuada pellentesque.
+              Dapibus in eu aenean in tincidunt.
+            </p>
+          </div>
+        </div>
+        <!-- find-doctor -->
+        <div
+          class="relative rounded-[25px] border border-white/50 bg-[#6D93A6] tracking-normal p-[25px] backdrop-blur sm:rounded-[28px] sm:p-[30px] lg:absolute lg:bottom-[28px] lg:left-0 lg:right-0 lg:mx-auto lg:w-[calc(100%-40px)] lg:px-[22px] lg:py-[24px] xl:w-[calc(100%-80px)]"
+        >
+          <!-- Title -->
+          <h2
+            class="mb-[18px] font-jakarta text-[20px] font-semibold text-white sm:text-[22px]"
+          >
+            Find a doctor
+          </h2>
+
+          <!-- Search Controls -->
+          <div class="flex flex-col lg:flex-row lg:items-center">
+            <!-- Doctor / Location -->
+            <div
+              class="mb-[12px] w-full lg:mb-0 lg:mr-[12px] lg:w-[300px] xl:w-[315px]"
+            >
+              <input
+                type="text"
+                placeholder="Name of Doctor or Location...."
+                class="h-[60px] w-full rounded-[16px] border-0 bg-white px-[18px] font-dmsans text-[16px] text-[#555] outline-none placeholder:text-[#8E8E8E] sm:px-[16px] sm:py-[20px]"
+              />
+            </div>
+
+            <!-- Specialty -->
+            <div
+              class="relative mb-[12px] w-full lg:mb-0 lg:mr-[12px] lg:w-[230px]"
+            >
+              <select
+                class="h-[60px] w-full appearance-none rounded-[16px] border-0 bg-white px-[18px] pr-[45px] font-dmsans text-[16px] text-[#8E8E8E] outline-none sm:px-[20px] sm:py-[15px]"
+              >
+                <option>Specialty</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Dermatology</option>
+              </select>
+
+              <i
+                class="fa-solid fa-chevron-down pointer-events-none absolute right-[18px] top-1/2 -translate-y-1/2 text-[15px] text-[#888]"
+              ></i>
+            </div>
+
+            <!-- Sort By -->
+            <div
+              class="relative mb-[12px] w-full lg:mb-0 lg:mr-[12px] lg:w-[250px]"
+            >
+              <select
+                class="h-[60px] w-full appearance-none rounded-[16px] border-0 bg-white px-[18px] pr-[45px] font-dmsans text-[16px] text-[#8E8E8E] outline-none sm:px-[20px] sm:py-[15px]"
+              >
+                <option>Sort By</option>
+                <option>Experience</option>
+                <option>Rating</option>
+                <option>Availability</option>
+              </select>
+
+              <i
+                class="fa-solid fa-chevron-down pointer-events-none absolute right-[18px] top-1/2 -translate-y-1/2 text-[15px] text-[#888]"
+              ></i>
+            </div>
+
+            <!-- Mode of Consult -->
+            <div
+              class="relative mb-[18px] w-full lg:mb-0 lg:mr-[12px] lg:w-[230px]"
+            >
+              <select
+                class="h-[60px] w-full appearance-none rounded-[16px] border-0 bg-white px-[18px] pr-[45px] font-dmsans text-[16px] text-[#8E8E8E] outline-none sm:px-[20px] sm:py-[15px]"
+              >
+                <option>Mode of Consult</option>
+                <option>In Clinic</option>
+                <option>Video Consult</option>
+              </select>
+
+              <i
+                class="fa-solid fa-chevron-down pointer-events-none absolute right-[18px] top-1/2 -translate-y-1/2 text-[15px] text-[#888]"
+              ></i>
+            </div>
+
+            <!-- Availability -->
+            <div
+              class="mb-[18px] flex items-center lg:mb-0 lg:mr-[15px] lg:shrink-0"
+            >
+              <span class="mr-[10px] font-dmsans text-[16px] text-white">
+                Availability
+              </span>
+
+              <!-- Replace this with your downloaded Figma availability image -->
+              <img
+                src="./images/doctor/toggle-switch.png"
+                alt="Availability"
+                class="h-[28px] w-[48px] object-contain"
+              />
+            </div>
+
+            <!-- Search Button -->
+            <button
+              type="button"
+              class="flex h-[60px] w-full shrink-0 items-center justify-between rounded-full bg-[#1E81AB] hover:bg-darkBlue px-[8px] pl-[20px] font-dmsans text-[17px] font-medium text-white sm:h-[62px] lg:w-[155px]"
+            >
+              <span>Search</span>
+
+              <!-- Replace this with your downloaded Figma search icon -->
+              <span
+                class="flex h-[46px] w-[46px] items-center justify-center rounded-full bg-white"
+              >
+                <img
+                  src="./images/doctor/arrow.png"
+                  alt="Search"
+                  class="h-[42px] w-[42px] object-cover"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- doctor card part -->
+
+      <section
+        class="doctors py-[50px] sm:py-[60px] lg:py-[70px] tracking-normal"
+      >
+        <div class="container">
+          <!-- Breadcrumb -->
+          <div class="mb-[40px] sm:mb-[50px] lg:mb-[60px]">
+            <a
+              href="#"
+              class="text-[18px] font-medium text-[#888888] sm:text-[20px]"
+            >
+              Home
+            </a>
+
+            <span class="mx-[8px] text-[20px] text-black sm:mx-[10px]">
+              ›
+            </span>
+
+            <span class="text-[18px] font-medium text-black sm:text-[20px]">
+              Doctors
+            </span>
+          </div>
+
+          <!-- Doctors Row -->
+          <div class="row gap-y-[40px] sm:gap-y-[45px] lg:gap-y-[45px]">
+            <!-- Doctor 1 -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/udayShankar.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[47%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <!-- Doctor Information -->
+                  <div>
+                    <h2
+                      class="text-[22px] font-semibold leading-[1.2] text-[#1E1E1E] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Uday Shankar Roy
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Cardiologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      15 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      3 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      Apollo Multispeciality Hospitals,<br />
+                      Kolkata
+                    </p>
+
+                    <!-- Rating -->
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        97%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A4A4] sm:text-[15px]">
+                        (250+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] font-jakarta text-[20px] font-semibold text-[#1E1E1E] sm:text-[22px] lg:text-[20px]"
+                    >
+                      ₹1520
+                    </p>
+                  </div>
+
+                  <!-- Button -->
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white shadow-md transition hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/trisha.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[47%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <div>
+                    <h2
+                      class="font-jakarta text-[22px] font-semibold leading-[1.2] text-[#1E1E1E] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Trisha Das
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Dermatologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      5 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      3 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      Apollo Multispeciality Hospitals,<br />
+                      Kolkata
+                    </p>
+
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        97%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A4A4] sm:text-[15px]">
+                        (250+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] font-jakarta text-[20px] font-semibold text-[#1E1E1E] sm:text-[22px] lg:text-[23px]"
+                    >
+                      ₹1200
+                    </p>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white shadow-md hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/ishan.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[47%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <div>
+                    <h2
+                      class="font-jakarta text-[22px] font-semibold leading-[1.2] text-[#1E1E1E] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Ishan Khan
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Urologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      5 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      3 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      Apollo Multispeciality Hospitals,<br />
+                      Kolkata
+                    </p>
+
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        98%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A4A4] sm:text-[14px]">
+                        (250+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] text-[20px] font-semibold text-[#1E1E1E]"
+                    >
+                      ₹1100
+                    </p>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white shadow-md hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doctor 4 - Satarup -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/satarup.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[47%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <div>
+                    <h2
+                      class="text-[22px] font-semibold leading-[1.2] text-[#1E1E1E] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Satarup Karmakar
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Gastroenterologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      12 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      3 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      CMRI Hospital, Kolkata
+                    </p>
+
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        97%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A4A4]">
+                        (250+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] text-[20px] font-semibold text-[#1E1E1E]"
+                    >
+                      ₹1900
+                    </p>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white shadow-md hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doctor 5 -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/gautam.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[47%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <div>
+                    <h2
+                      class="text-[22px] font-semibold leading-[1.2] text-[#1E1E1E] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Gautam Naik
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Cardiologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      10 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      8 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      Desun Hospital, Kolkata
+                    </p>
+
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        70%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A4A4] sm:text-[14px]">
+                        (150+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] font-jakarta text-[20px] font-semibold text-[#1E1E1E] sm:text-[22px] lg:text-[20px]"
+                    >
+                      ₹1500
+                    </p>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doctor 6 -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/trina.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[47%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <div>
+                    <h2
+                      class="text-[22px] font-semibold leading-[1.2] text-[#202020] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Trina Ghosh
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Gynecologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      8 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      8 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      Ruby Hospitals, Kolkata
+                    </p>
+
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        70%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A6A4] sm:text-[14px]">
+                        (150+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] font-jakarta text-[20px] font-semibold text-[#1E1E1E] sm:text-[22px] lg:text-[20px]"
+                    >
+                      ₹1000
+                    </p>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doctor 7 -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/vishnu.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[47%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <div>
+                    <h2
+                      class="text-[22px] font-semibold leading-[1.2] text-[#202020] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Vishnu Prashant
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Cardiologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      8 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      8 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      Ruby Hospitals, Kolkata
+                    </p>
+
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        70%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A4A4]">
+                        (150+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] font-jakarta text-[20px] font-semibold text-[#1E1E1E] sm:text-[22px] lg:text-[20px]"
+                    >
+                      ₹1020
+                    </p>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doctor 8 -->
+            <div class="col col-50 max-lg:col-50 max-sm:col-100">
+              <div
+                class="doctor-card relative min-h-[330px] overflow-hidden rounded-[35px] bg-[url('../images/doctor/chanchal.png')] bg-cover bg-no-repeat sm:min-h-[350px] lg:min-h-[331px] max-w-[597px]"
+              >
+                <div
+                  class="ml-[45%] flex min-h-[330px] flex-col justify-between py-[30px] pr-[20px] sm:min-h-[350px] sm:py-[32px] sm:pr-[25px] lg:py-[32px] lg:pr-[24px]"
+                >
+                  <div>
+                    <h2
+                      class="text-[22px] font-semibold leading-[1.2] text-[#1E1E1E] sm:text-[25px] lg:text-[24px]"
+                    >
+                      Dr. Chanchal Banik
+                    </h2>
+
+                    <p
+                      class="mt-[10px] text-[17px] text-[#626060] sm:text-[18px] lg:text-[18px]"
+                    >
+                      Cardiologist
+                    </p>
+
+                    <p
+                      class="mt-[12px] truncate text-[15px] font-semibold text-darkBlue sm:text-[17px] lg:text-[16px]"
+                    >
+                      10 Yrs . MBBS(HONS.), MD(MEDICINE),.....
+                    </p>
+
+                    <p
+                      class="mt-[12px] text-[16px] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      3 KM . Kolkata
+                    </p>
+
+                    <p
+                      class="mt-[10px] text-[16px] leading-[1.4] text-[#767676] sm:text-[17px] lg:text-[18px]"
+                    >
+                      Apollo Multispeciality Hospitals,<br />
+                      Kolkata
+                    </p>
+
+                    <div class="mt-[15px] flex items-center gap-[10px]">
+                      <span
+                        class="text-[17px] font-medium text-blue sm:text-[18px]"
+                      >
+                        <i class="fa-solid fa-thumbs-up mr-[3px]"></i>
+                        97%
+                      </span>
+
+                      <span class="text-[14px] text-[#A6A4A4] sm:text-[14px]">
+                        (250+ Patient)
+                      </span>
+                    </div>
+
+                    <p
+                      class="mt-[10px] font-jakarta text-[20px] font-semibold text-[#1E1E1E] sm:text-[22px] lg:text-[23px]"
+                    >
+                      ₹1520
+                    </p>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <a
+                      href="#"
+                      class="flex items-center rounded-full bg-[#1E81AB] py-[6px] pl-[20px] pr-[6px] text-[15px] font-medium text-white hover:bg-[#155B79] sm:py-[7px] sm:pl-[22px] sm:pr-[7px] sm:text-[16px] lg:text-[17px]"
+                    >
+                      View Details
+                      <span
+                        class="ml-[10px] flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white text-[20px] text-[#1E81AB] sm:h-[45px] sm:w-[45px]"
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View More Doctors -->
+          <div class="mt-[45px] flex justify-center sm:mt-[55px] lg:mt-[60px]">
+            <a
+              href="#"
+              class="flex items-center rounded-full border border-[#1E81AB] py-[5px] pl-[22px] pr-[5px] text-[16px] font-medium text-[#155B79] transition hover:bg-[#1E81AB] hover:text-white sm:py-[6px] sm:pl-[25px] sm:pr-[6px] sm:text-[17px]"
+            >
+              View More Doctors
+
+              <span
+                class="ml-[12px] flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#1E81AB] text-[21px] text-white sm:h-[42px] sm:w-[42px]"
+              >
+                →
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ section -->
+
+      <section class="faq-section py-[60px] sm:py-[70px] lg:py-[70px]">
+        <div class="container">
+          <!-- FAQ Heading -->
+          <h2
+            class="text-center font-jakarta text-[#176080] text-[42px] leading-[1.2] font-semibold mb-[45px] sm:text-[50px] lg:text-[60px] lg:mb-[50px]"
+          >
+            FAQs
+          </h2>
+
+          <!-- FAQ Wrapper -->
+          <div class="faq-wrapper">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item mb-[10px] sm:mb-[12px] tracking-normal">
+              <button
+                type="button"
+                class="faq-question w-full flex items-center justify-between text-left bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] rounded-r-[20px] rounded-l-[4px] px-[25px] py-[25px] sm:px-[35px] sm:py-[30px] lg:px-[40px] lg:py-[35px]"
+              >
+                <span
+                  class="font-jakarta text-[#145D7D] text-[17px] leading-[1.4] font-semibold sm:text-[20px] lg:text-[24px]"
+                >
+                  How do I consult a doctor online now?
+                </span>
+
+                <span
+                  class="faq-icon shrink-0 ml-[20px] text-[#0879A5] text-[18px] transition-transform duration-300"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+
+              <div
+                class="faq-answer hidden bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] px-[25px] pb-[25px] sm:px-[35px] sm:pb-[30px] lg:px-[40px] lg:pb-[35px]"
+              >
+                <p
+                  class="font-dmsans text-[#426B7A] text-[15px] leading-[1.7] sm:text-[17px]"
+                >
+                  You can consult a doctor online by selecting a doctor,
+                  choosing an available time slot, and booking your online
+                  consultation.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item mb-[10px] sm:mb-[12px]">
+              <button
+                type="button"
+                class="faq-question w-full flex items-center justify-between text-left bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] rounded-r-[20px] rounded-l-[4px] px-[25px] py-[25px] sm:px-[35px] sm:py-[30px] lg:px-[40px] lg:py-[35px]"
+              >
+                <span
+                  class="font-jakarta text-[#145D7D] text-[17px] leading-[1.4] font-semibold sm:text-[20px] lg:text-[24px]"
+                >
+                  What is the minimum fee for online doctor consultation?
+                </span>
+
+                <span
+                  class="faq-icon shrink-0 ml-[20px] text-[#0879A5] text-[18px] transition-transform duration-300"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+
+              <div
+                class="faq-answer hidden bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] px-[25px] pb-[25px] sm:px-[35px] sm:pb-[30px] lg:px-[40px] lg:pb-[35px]"
+              >
+                <p
+                  class="font-dmsans text-[#426B7A] text-[15px] leading-[1.7] sm:text-[17px]"
+                >
+                  The consultation fee depends on the doctor and specialty. You
+                  can view the consultation fee before booking your appointment.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item mb-[10px] sm:mb-[12px]">
+              <button
+                type="button"
+                class="faq-question w-full flex items-center justify-between text-left bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] rounded-r-[20px] rounded-l-[4px] px-[25px] py-[25px] sm:px-[35px] sm:py-[30px] lg:px-[40px] lg:py-[35px]"
+              >
+                <span
+                  class="font-jakarta text-[#145D7D] text-[17px] leading-[1.4] font-semibold sm:text-[20px] lg:text-[24px]"
+                >
+                  What is a specialist doctor?
+                </span>
+
+                <span
+                  class="faq-icon shrink-0 ml-[20px] text-[#0879A5] text-[18px] transition-transform duration-300"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+
+              <div
+                class="faq-answer hidden bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] px-[25px] pb-[25px] sm:px-[35px] sm:pb-[30px] lg:px-[40px] lg:pb-[35px]"
+              >
+                <p
+                  class="font-dmsans text-[#426B7A] text-[15px] leading-[1.7] sm:text-[17px]"
+                >
+                  A specialist doctor is a medical professional who has advanced
+                  training and expertise in a particular area of medicine.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item mb-[10px] sm:mb-[12px]">
+              <button
+                type="button"
+                class="faq-question w-full flex items-center justify-between text-left bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] rounded-r-[20px] rounded-l-[4px] px-[25px] py-[25px] sm:px-[35px] sm:py-[30px] lg:px-[40px] lg:py-[35px]"
+              >
+                <span
+                  class="font-jakarta text-[#145D7D] text-[17px] leading-[1.4] font-semibold sm:text-[20px] lg:text-[24px]"
+                >
+                  When should you consult a specialist doctor?
+                </span>
+
+                <span
+                  class="faq-icon shrink-0 ml-[20px] text-[#0879A5] text-[18px] transition-transform duration-300"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+
+              <div
+                class="faq-answer hidden bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] px-[25px] pb-[25px] sm:px-[35px] sm:pb-[30px] lg:px-[40px] lg:pb-[35px]"
+              >
+                <p
+                  class="font-dmsans text-[#426B7A] text-[15px] leading-[1.7] sm:text-[17px]"
+                >
+                  You should consult a specialist when your condition requires
+                  expert evaluation, diagnosis, or treatment in a specific
+                  medical field.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <button
+                type="button"
+                class="faq-question w-full flex items-center justify-between text-left bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] rounded-r-[20px] rounded-l-[4px] px-[25px] py-[25px] sm:px-[35px] sm:py-[30px] lg:px-[40px] lg:py-[35px]"
+              >
+                <span
+                  class="font-jakarta text-[#145D7D] text-[17px] leading-[1.4] font-semibold sm:text-[20px] lg:text-[24px]"
+                >
+                  Why is it best to consult a specialist doctor?
+                </span>
+
+                <span
+                  class="faq-icon shrink-0 ml-[20px] text-[#0879A5] text-[18px] transition-transform duration-300"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+
+              <div
+                class="faq-answer hidden bg-[#E0F5FC] border-l-[7px] border-[#55CBD8] px-[25px] pb-[25px] sm:px-[35px] sm:pb-[30px] lg:px-[40px] lg:pb-[35px]"
+              >
+                <p
+                  class="font-dmsans text-[#426B7A] text-[15px] leading-[1.7] sm:text-[17px]"
+                >
+                  A specialist has focused knowledge and experience in a
+                  particular medical field, which can help provide more accurate
+                  diagnosis and appropriate treatment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-[60px] sm:py-[70px] lg:py-[90px]">
+      <div class="container">
+        <!-- Footer Top -->
+        <div class="row">
+          <!-- Brand -->
+          <div class="col col-30 lg:col-30 md:col-50 sm:col-100 mb-[40px]">
+            <div class="flex flex-col items-center">
+              <!-- Logo -->
+              <div class="mb-[70px]">
+                <a href="#">
+                  <img
+                    src="./images/home/logo.png"
+                    alt="MediFlow"
+                    class="max-w-[98px] h-auto"
+                  />
+                </a>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="flex items-center">
+                <a href="#" class="mr-[18px]">
+                  <img
+                    src="./images/home/fb.png"
+                    alt="Facebook"
+                    class="max-w-[30px]"
+                  />
+                </a>
+
+                <a href="#" class="mr-[18px]">
+                  <img
+                    src="./images/home/insta.png"
+                    alt="Instagram"
+                    class="max-w-[30px]"
+                  />
+                </a>
+
+                <a href="#" class="mr-[18px]">
+                  <img
+                    src="./images/home/twitter.png"
+                    alt="X"
+                    class="max-w-[26px]"
+                  />
+                </a>
+
+                <a href="#" class="mr-[18px]">
+                  <img
+                    src="./images/home/linkdn.png"
+                    alt="LinkedIn"
+                    class="max-w-[30px]"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    src="./images/home/yt.png"
+                    alt="YouTube"
+                    class="max-w-[38px]"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Us -->
+          <div
+            class="col col-15 lg:col-15 md:col-25 sm:col-50 mb-[40px] lg:mb-0"
+          >
+            <p
+              class="font-bold font-jakarta text-[20px] sm:text-[21px] lg:text-[20px] leading-[1.3] mb-[18px]"
+            >
+              About Us
+            </p>
+
+            <ul>
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Who we are
+                </a>
+              </li>
+
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Our Impact
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  For Businesses
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div
+            class="col col-15 lg:col-15 md:col-25 sm:col-50 mb-[40px] lg:mb-0"
+          >
+            <p
+              class="font-bold font-jakarta text-[20px] sm:text-[21px] lg:text-[20px] leading-[1.3] mb-[18px]"
+            >
+              Resources
+            </p>
+
+            <ul>
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
+
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Event
+                </a>
+              </li>
+
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Case Studies
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  For Businesses
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div
+            class="col col-20 lg:col-20 md:col-50 sm:col-50 mb-[40px] lg:mb-0"
+          >
+            <p
+              class="font-bold font-jakarta text-[20px] sm:text-[21px] lg:text-[20px] leading-[1.3] mb-[18px]"
+            >
+              Services
+            </p>
+
+            <ul>
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Search for doctors
+                </a>
+              </li>
+
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Search for hospitals
+                </a>
+              </li>
+
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Read health articles
+                </a>
+              </li>
+
+              <li class="mb-[14px]">
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Health app
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] leading-[1.4] hover:text-[#B3D6E5] transition-colors"
+                >
+                  Ask health questions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div
+            class="col col-20 lg:col-20 md:col-50 sm:col-100 tracking-normal"
+          >
+            <p
+              class="font-bold font-jakarta text-[20px] sm:text-[21px] lg:text-[20px] leading-[1.3] mb-[18px]"
+            >
+              Contact Us
+            </p>
+
+            <ul>
+              <li class="flex items-start mb-[18px]">
+                <img
+                  src="./images/home/mail.png"
+                  alt=""
+                  class="w-[25px] h-[25px] shrink-0 mr-[8px]"
+                />
+
+                <a
+                  href="mailto:contact@mediflow.com"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px] w-[25px] h-[25px] leading-[1.4]"
+                >
+                  contact@mediflow.com
+                </a>
+              </li>
+
+              <li class="flex items-start mb-[18px]">
+                <img
+                  src="./images/home/phone.png"
+                  alt=""
+                  class="w-[25px] h-[25px] shrink-0 mr-[8px]"
+                />
+
+                <a
+                  href="tel:123456789"
+                  class="text-[16px] sm:text-[17px] lg:text-[20px]"
+                >
+                  123456789
+                </a>
+              </li>
+
+              <li class="flex items-start">
+                <img
+                  src="./images/home/map-pin.png"
+                  alt=""
+                  class="w-[25px] h-[25px] shrink-0 mr-[8px]"
+                />
+
+                <span class="text-[16px] sm:text-[17px] lg:text-[20px]">
+                  Newtown, Kolkata
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="px-[20px] mt-[50px] pt-[30px]">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between"
+          >
+            <!-- Copyright -->
+            <p
+              class="text-[13px] sm:text-[14px] lg:text-[15px] mb-[15px] md:mb-0"
+            >
+              ©2025 MediFlow. All rights reserved.
+            </p>
+
+            <!-- Bottom Links -->
+            <ul class="flex flex-wrap items-center">
+              <li class="mr-[20px] mb-[8px] md:mb-0">
+                <a
+                  href="#"
+                  class="text-[13px] sm:text-[14px] hover:text-[#B3D6E5]"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li class="mr-[20px] mb-[8px] md:mb-0">
+                <a
+                  href="#"
+                  class="text-[13px] sm:text-[14px] hover:text-[#B3D6E5]"
+                >
+                  Terms of Service
+                </a>
+              </li>
+
+              <li class="mb-[8px] md:mb-0">
+                <a
+                  href="#"
+                  class="text-[13px] sm:text-[14px] hover:text-[#B3D6E5]"
+                >
+                  Cookies Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/doctor.js"></script>
+  </body>
+</html>
