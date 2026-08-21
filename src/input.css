@@ -21,10 +21,12 @@
   --font-jakarta: "Jakarta";
 }
 @layer base {
-  /* a{
-        text-decoration: none;
-        @apply text-sm text-grey font-medium hover:text-pink;
-    } */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   body {
     font-family: "DMSans";
     letter-spacing: 1px;
